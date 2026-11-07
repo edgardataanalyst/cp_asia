@@ -1,0 +1,1196 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Explore CP ASIA ENTERPRISES customized stainless steel kitchen equipment, sinks, cabinets, racks, exhaust hoods and commercial kitchen solutions.">
+<title>Products | CP ASIA ENTERPRISES</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Montserrat:wght@500;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+:root {
+    --dark: #20252b;
+    --dark2: #11161c;
+    --orange: #e77d28;
+    --white: #fff;
+    --light: #f4f5f6;
+    --text: #60666d;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'DM Sans', sans-serif;
+    color: var(--dark);
+    background: white;
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+.container {
+    width: min(1200px, 90%);
+    margin: auto;
+}
+
+/* TOP BAR */
+
+.topbar {
+    background: var(--dark2);
+    color: #ddd;
+    padding: 10px 0;
+    font-size: 12px;
+}
+
+.topbar-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+}
+
+/* HEADER */
+
+header {
+    background: white;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 3px 15px rgba(0,0,0,.06);
+}
+
+.navbar {
+    min-height: 85px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.logo img {
+    width: 65px;
+    height: 65px;
+    object-fit: contain;
+}
+
+.logo-text strong {
+    display: block;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 17px;
+    font-weight: 800;
+    letter-spacing: 1px;
+}
+
+.logo-text span {
+    font-size: 10px;
+    color: var(--text);
+    letter-spacing: 2px;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    list-style: none;
+}
+
+.nav-links a {
+    font-size: 13px;
+    font-weight: 700;
+    transition: .3s;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+    color: var(--orange);
+}
+
+.nav-cta {
+    background: var(--orange);
+    color: white !important;
+    padding: 13px 21px;
+    border-radius: 3px;
+}
+
+.menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 28px;
+    cursor: pointer;
+    color: var(--dark);
+}
+
+/* PAGE BANNER */
+
+.page-hero {
+    min-height: 390px;
+    display: flex;
+    align-items: center;
+    color: white;
+    background:
+        linear-gradient(90deg, rgba(13,18,24,.94), rgba(13,18,24,.45)),
+        url('assets/images/products-banner.jpg') center/cover no-repeat;
+}
+
+.page-hero-content {
+    padding: 85px 0;
+}
+
+.eyebrow {
+    color: var(--orange);
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    margin-bottom: 18px;
+}
+
+.page-hero h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: clamp(38px, 5vw, 58px);
+    margin-bottom: 20px;
+}
+
+.page-hero p {
+    color: #ddd;
+    font-size: 15px;
+    line-height: 1.8;
+    max-width: 620px;
+}
+
+.breadcrumb {
+    margin-top: 25px;
+    font-size: 12px;
+    color: #ccc;
+}
+
+.breadcrumb a {
+    color: var(--orange);
+}
+
+/* INTRODUCTION */
+
+.section-padding {
+    padding: 85px 0;
+}
+
+.intro {
+    text-align: center;
+    max-width: 800px;
+    margin: auto;
+}
+
+.intro h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: clamp(27px, 3vw, 37px);
+    margin-bottom: 18px;
+}
+
+.intro p {
+    color: var(--text);
+    font-size: 14px;
+    line-height: 1.9;
+}
+
+/* CATEGORY FILTER */
+
+.catalog {
+    background: var(--light);
+}
+
+.section-heading {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.section-heading h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: clamp(27px, 3vw, 36px);
+    margin-bottom: 12px;
+}
+
+.section-heading p {
+    color: var(--text);
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+.category-filters {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 45px;
+}
+
+.filter-btn {
+    padding: 12px 20px;
+    border: 1px solid #d5d9dd;
+    background: white;
+    color: var(--dark);
+    border-radius: 3px;
+    cursor: pointer;
+    font-family: inherit;
+    font-size: 12px;
+    font-weight: 700;
+    transition: .3s;
+}
+
+.filter-btn:hover,
+.filter-btn.active {
+    background: var(--orange);
+    border-color: var(--orange);
+    color: white;
+}
+
+/* PRODUCT GRID */
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.product-card {
+    background: white;
+    border-radius: 4px;
+    overflow: hidden;
+    box-shadow: 0 5px 20px rgba(0,0,0,.04);
+    transition: .3s;
+}
+
+.product-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 28px rgba(0,0,0,.10);
+}
+
+.product-card.hidden {
+    display: none;
+}
+
+.product-image {
+    position: relative;
+    overflow: hidden;
+}
+
+.product-image img {
+    width: 100%;
+    height: 230px;
+    object-fit: cover;
+    transition: .5s;
+}
+
+.product-card:hover .product-image img {
+    transform: scale(1.06);
+}
+
+.product-category {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    background: var(--orange);
+    color: white;
+    padding: 7px 12px;
+    border-radius: 2px;
+    font-size: 10px;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+.product-info {
+    padding: 24px;
+}
+
+.product-info h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 17px;
+    margin-bottom: 10px;
+}
+
+.product-info p {
+    color: var(--text);
+    font-size: 13px;
+    line-height: 1.8;
+    min-height: 70px;
+}
+
+.product-link {
+    display: inline-block;
+    margin-top: 17px;
+    color: var(--orange);
+    font-size: 12px;
+    font-weight: 800;
+    transition: .3s;
+}
+
+.product-link:hover {
+    color: var(--dark);
+}
+
+/* CUSTOMIZED PRODUCTS */
+
+.custom-section {
+    background: var(--dark);
+    color: white;
+}
+
+.custom-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+}
+
+.custom-image img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+.custom-content h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 34px;
+    line-height: 1.4;
+    margin-bottom: 20px;
+}
+
+.custom-content p {
+    color: #c3c8ce;
+    font-size: 14px;
+    line-height: 1.9;
+    margin-bottom: 20px;
+}
+
+.custom-list {
+    list-style: none;
+    margin: 20px 0 30px;
+}
+
+.custom-list li {
+    padding: 9px 0;
+    font-size: 13px;
+}
+
+.custom-list li::before {
+    content: "✓";
+    color: var(--orange);
+    font-weight: 800;
+    margin-right: 12px;
+}
+
+/* CTA */
+
+.cta {
+    padding: 75px 0;
+    background: var(--light);
+}
+
+.cta-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+}
+
+.cta h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: clamp(25px, 3vw, 35px);
+    margin-bottom: 12px;
+}
+
+.cta p {
+    color: var(--text);
+    font-size: 14px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 15px 26px;
+    background: var(--orange);
+    color: white;
+    font-size: 12px;
+    font-weight: 800;
+    border-radius: 3px;
+    transition: .3s;
+}
+
+.btn:hover {
+    background: var(--dark);
+}
+
+/* FOOTER */
+
+footer {
+    background: #0d1116;
+    color: white;
+    padding: 65px 0 20px;
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr 1fr 1.3fr;
+    gap: 35px;
+    margin-bottom: 45px;
+}
+
+.footer-brand img {
+    width: 70px;
+    margin-bottom: 15px;
+    background: white;
+    border-radius: 5px;
+}
+
+.footer-grid h3,
+.footer-grid h4 {
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 17px;
+}
+
+.footer-grid h3 {
+    font-size: 17px;
+}
+
+.footer-grid h4 {
+    font-size: 14px;
+}
+
+.footer-grid p,
+.footer-grid a {
+    display: block;
+    color: #b8bec4;
+    font-size: 12px;
+    line-height: 2.2;
+}
+
+.footer-grid a:hover {
+    color: var(--orange);
+}
+
+.copyright {
+    border-top: 1px solid #30363d;
+    padding-top: 20px;
+    text-align: center;
+    color: #999;
+    font-size: 11px;
+}
+
+/* TABLET */
+
+@media(max-width: 1024px) {
+    .nav-links {
+        gap: 16px;
+    }
+
+    .nav-links a {
+        font-size: 11px;
+    }
+
+    .product-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .footer-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* MOBILE */
+
+@media(max-width: 767px) {
+    .topbar-content {
+        justify-content: center;
+        text-align: center;
+    }
+
+    .topbar-content span:last-child {
+        display: none;
+    }
+
+    .navbar {
+        min-height: 72px;
+    }
+
+    .logo img {
+        width: 52px;
+        height: 52px;
+    }
+
+    .logo-text strong {
+        font-size: 14px;
+    }
+
+    .logo-text span {
+        font-size: 8px;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .nav-links {
+        display: none;
+        position: absolute;
+        top: 72px;
+        left: 0;
+        width: 100%;
+        background: white;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 0;
+        padding: 10px 5%;
+        box-shadow: 0 10px 15px rgba(0,0,0,.08);
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .nav-links li a {
+        display: block;
+        padding: 15px 5px;
+        font-size: 13px;
+    }
+
+    .nav-cta {
+        text-align: center;
+        margin: 8px 0;
+    }
+
+    .page-hero {
+        min-height: 330px;
+    }
+
+    .page-hero-content {
+        padding: 65px 0;
+    }
+
+    .page-hero h1 {
+        font-size: 38px;
+    }
+
+    .page-hero p {
+        font-size: 13px;
+    }
+
+    .section-padding {
+        padding: 65px 0;
+    }
+
+    .product-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .product-image img {
+        height: 250px;
+    }
+
+    .custom-grid {
+        grid-template-columns: 1fr;
+        gap: 35px;
+    }
+
+    .custom-image img {
+        height: 280px;
+    }
+
+    .custom-content h2 {
+        font-size: 28px;
+    }
+
+    .cta-content {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .footer-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<!-- TOP BAR -->
+<div class="topbar">
+    <div class="container topbar-content">
+        <span>✉ ask.cpasiaenterprises@gmail.com</span>
+        <span>☎ 0998-573-7151 | Nationwide Delivery</span>
+    </div>
+</div>
+
+<!-- NAVIGATION -->
+<header>
+    <div class="container navbar">
+
+        <a href="index.html" class="logo">
+            <img src="assets/images/logo.png" alt="CP Asia Logo">
+            <div class="logo-text">
+                <strong>CP ASIA ENTERPRISES</strong>
+                <span>STAINLESS KITCHEN FABRICATION</span>
+            </div>
+        </a>
+
+        <button class="menu-toggle" id="menuToggle"
+                aria-label="Toggle navigation" aria-expanded="false">
+            ☰
+        </button>
+
+        <ul class="nav-links" id="navLinks">
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="about_us.html">ABOUT US</a></li>
+            <li><a href="products.html" class="active">PRODUCTS</a></li>
+            <li><a href="services.html">SERVICES</a></li>
+            <li><a href="projects.html">PROJECTS</a></li>
+            <li><a href="contact.html" class="nav-cta">GET A QUOTE</a></li>
+        </ul>
+
+    </div>
+</header>
+
+<!-- PAGE BANNER -->
+<section class="page-hero">
+    <div class="container page-hero-content">
+
+        <div class="eyebrow">Our Product Collection</div>
+
+        <h1>Products & Equipment</h1>
+
+        <p>
+            Discover our range of customized stainless steel kitchen
+            equipment designed for commercial, foodservice and
+            residential kitchen requirements.
+        </p>
+
+        <div class="breadcrumb">
+            <a href="index.html">Home</a> &nbsp; / &nbsp; Products
+        </div>
+
+    </div>
+</section>
+
+<!-- INTRODUCTION -->
+<section class="section-padding">
+    <div class="container intro">
+
+        <div class="eyebrow">Made for Your Kitchen</div>
+
+        <h2>Customized Stainless Steel Kitchen Solutions</h2>
+
+        <p>
+            CP ASIA ENTERPRISES fabricates a wide range of made-to-order
+            stainless steel kitchen equipment using SS 304 food-grade
+            stainless steel. From preparation tables and sinks to cabinets,
+            racks and exhaust hoods, we customize our products according
+            to your requirements and kitchen layout.
+        </p>
+
+    </div>
+</section>
+
+<!-- PRODUCT CATALOG -->
+<section class="section-padding catalog" id="catalog">
+    <div class="container">
+
+        <div class="section-heading">
+            <div class="eyebrow">Explore Our Collection</div>
+            <h2>Browse Our Products</h2>
+            <p>
+                Select a category to explore our stainless steel
+                fabrication products.
+            </p>
+        </div>
+
+        <!-- FILTER BUTTONS -->
+        <div class="category-filters">
+
+            <button class="filter-btn active" data-filter="all">ALL PRODUCTS</button>
+            <button class="filter-btn" data-filter="preparation">PREPARATION TABLES</button>
+            <button class="filter-btn" data-filter="sinks">SINKS</button>
+            <button class="filter-btn" data-filter="cabinets">CABINETS</button>
+            <button class="filter-btn" data-filter="shelves">SHELVES & RACKS</button>
+            <button class="filter-btn" data-filter="equipment">EQUIPMENT</button>
+            <button class="filter-btn" data-filter="exhaust">EXHAUST SYSTEMS</button>
+
+        </div>
+
+        <!-- PRODUCT CARDS -->
+        <div class="product-grid">
+
+            <!-- PREPARATION TABLES -->
+
+            <div class="product-card" data-category="preparation">
+                <div class="product-image">
+                    <img src="assets/images/preptable.jpg" alt="Stainless Steel Prep Table">
+                    <span class="product-category">Preparation</span>
+                </div>
+                <div class="product-info">
+                    <h3>Preparation Tables</h3>
+                    <p>Customized prep tables with or without bottom shelves for kitchen preparation areas.</p>
+                    <a href="contact.html" class="product-link">INQUIRE ABOUT THIS PRODUCT →</a>
+                </div>
+            </div>
+
+            <div class="product-card" data-category="preparation">
+                <div class="product-image">
+                    <img src="assets/images/preptable-sink.jpg" alt="Prep Table with Sink">
+                    <span class="product-category">Preparation</span>
+                </div>
+                <div class="product-info">
+                    <h3>Prep Table with Sink</h3>
+                    <p>Preparation tables integrated with sinks, including options with ice bins and overshelves.</p>
+                    <a href="contact.html" class="product-link">INQUIRE ABOUT THIS PRODUCT →</a>
+                </div>
+            </div>
+
+            <div class="product-card" data-category="preparation">
+                <div class="product-image">
+                    <img src="assets/images/soiled-dish-table.jpg" alt="Soiled Dish Table">
+                    <span class="product-category">Preparation</span>
+                </div>
+                <div class="product-info">
+                    <h3>Soiled Dish Table</h3>
+                    <p>Stainless steel soiled dish tables with hole for dishwashing and kitchen operations.</p>
+                    <a href="contact.html" class="product-link">INQUIRE ABOUT THIS PRODUCT →</a>
+                </div>
+            </div>
+
+            <!-- SINKS -->
+
+            <div class="product-card" data-category="sinks">
+                <div class="product-image">
+                    <img src="assets/images/single-sink.jpg" alt="Single Compartment Sink">
+                    <span class="product-category">Sinks</span>
+                </div>
+                <div class="product-info">
+                    <h3>Single Compartment Sink</h3>
+                    <p>Customized single sink tables for kitchen washing and cleaning requirements.</p>
+                    <a href="contact.html" class="product-link">INQUIRE ABOUT THIS PRODUCT →</a>
+                </div>
+            </div>
+
+            <div class="product-card" data-category="sinks">
+                <div class="product-image">
+                    <img src="assets/images/double-sink.jpg" alt="Double Compartment Sink">
+                    <span class="product-category">Sinks</span>
+                </div>
+                <div class="product-info">
+                    <h3>Double Compartment Sink</h3>
+                    <p>Double compartment stainless steel sinks for commercial kitchen use.</p>
+                    <a href="contact.html" class="product-link">INQUIRE ABOUT THIS PRODUCT →</a>
+                </div>
+            </div>
+
+            <div class="product-card" data-category="sinks">
+                <div class="product-image">
+                    <img src="assets/images/triple-sink.jpg" alt="Triple Compartment Sink">
+                    <span class="product-category">Sinks</span>
+                </div>
+                <div class="product-info">
+                    <h3>Triple Compartment Sink</h3>
+                    <p>Three-compartment sinks for larger kitchen washing operations.</p>
+                    <a href="contact.html" class="product-link">INQUIRE ABOUT THIS PRODUCT →</a>
+                </div>
+            </div>
+
+            <div class="product-card" data-category="sinks">
+                <div class="product-image">
+                    <img src="assets/images/mop-sink.jpg" alt="Stainless Steel Mop Sink">
+                    <span class="product-category">Sinks</span>
+                </div>
+                <div class="product-info">
+                    <h3>Mop Sink</h3>
+                    <p>Stainless steel mop sinks for maintenance and cleaning areas.</p>
+                    <a href="contact.html" class="product-link">INQUIRE ABOUT THIS PRODUCT →</a>
+                </div>
+            </div>
+
+            <!-- CABINETS -->
+
+            <div class="product-card" data-category="cabinets">
+                <div class="product-image">
+                    <img src="assets/images/upright-cabinet.jpg" alt="Upright Stainless Steel Cabinet">
+                    <span class="product-category">Cabinets</span>
+                </div>
+                <div class="product-info">
+                    <h3>Upright Cabinets</h3>
+                    <p>Single and double upright stainless steel cabinets for kitchen storage.</p>
+                    <a href="contact.html" class="product-link">INQUIRE ABOUT THIS PRODUCT →</a>
+                </div>
+            </div>
+
+            <div class="product-card" data-category="cabinets">
+                <div class="product-image">
+                    <img src="assets/images/undercounter-cabinet.jpg" alt="Under Counter Cabinet">
+                    <span class="product-category">Cabinets</span>
+                </div>
+                <div class="product-info">
+                    <h3>Under Counter Cabinets</h3>
+                    <p>Customized under-counter and upper-counter stainless steel cabinets.</p>
+                    <a href="contact.html" class="product-link">INQUIRE ABOUT THIS PRODUCT →</a>
+                </div>
+            </div>
+
+            <div class="product-card" data-category="cabinets">
+                <div class="product-image">
+                    <img src="assets/images/modular-cabinet.jpg" alt="Modular Kitchen Cabinet">
+                    <span class="product-category">Cabinets</span>
+                </div>
+                <div class="product-info">
+                    <h3>Modular / Residential Cabinets</h3>
+                    <p>Customized cabinets with sink, drawers, pullouts and additional storage options.</p>
+                    <a href="contact.html" class="product-link">INQUIRE ABOUT THIS PRODUCT →</a>
+                </div>
+            </div>
+
+            <div class="product-card" data-category="cabinets">
+                <div class="product-image">
+                    <img src="assets/images/l-type-cabinet.jpg" alt="L Type Kitchen Cabinet">
+                    <span class="product-category">Cabinets</span>
+                </div>
+                <div class="product-info">
+                    <h3>L-Type Cabinets</h3>
+                    <p>Customized L-type stainless steel cabinets for residential and commercial kitchens.</p>
+                    <a href="contact.html" class="product-link">INQUIRE ABOUT THIS PRODUCT →</a>
+                </div>
+            </div>
+
+            <!-- SHELVES AND RACKS -->
+
+            <div class="product-card" data-category="shelves">
+                <div class="product-image">
+                    <img src="assets/images/wall-shelves.jpg" alt="Wall Mounted Shelves">
+                    <span class="product-category">Shelves & Racks</span>
+                </div>
+                <div class="product-info">
+                    <h3>Wall-Mounted Shelves</h3>
+                    <p>Single, double and triple stainless steel wall-mounted shelves.</p>
+                    <a href="contact.html" class="product-link">INQUIRE ABOUT THIS PRODUCT →</a>
+                </div>
+            </div>
+
+            <div class="product-card" data-category="shelves">
+                <div class="product-image">
+                    <img src="assets/images/multilayer-rack.jpg" alt="Multi Layer Rack">
+                    <span class="product-category">Shelves & Racks</span>
+                </div>
+                <div class="product-info">
+                    <h3>Multi-Layer Racks</h3>
+                    <p>Three to five-layer racks for organized kitchen storage.</p>
+                    <a href="contact.html" class="product-link">INQUIRE ABOUT THIS PRODUCT →</a>
+                </div>
+            </div>
+
+            <div class="product-card" data-category="shelves">
+                <div class="product-image">
+                    <img src="assets/images/slotted-rack.jpg" alt="Slotted Rack">
+                    <span class="product-category">Shelves & Racks</span>
+                </div>
+                <div class="product-info">
+                    <h3>Slotted & Plain Racks</h3>
+                    <p>Slotted racks, plain racks and cooling racks for different kitchen needs.</p>
+                    <a href="contact.html" class="product-link">INQUIRE ABOUT THIS PRODUCT →</a>
+                </div>
+            </div>
+
+            <!-- EQUIPMENT -->
+
+            <div class="product-card" data-category="equipment">
+                <div class="product-image">
+                    <img src="assets/images/bain-marie.jpg" alt="Bain Marie">
+                    <span class="product-category">Equipment</span>
+                </div>
+                <div class="product-info">
+                    <h3>Bain-Marie</h3>
+                    <p>Bain-maries with cabinet and glass or without glass, according to requirements.</p>
+                    <a href="contact.html" class="product-link">INQUIRE ABOUT THIS PRODUCT →</a>
+                </div>
+            </div>
+
+            <div class="product-card" data-category="equipment">
+                <div class="product-image">
+                    <img src="assets/images/utility-cart.jpg" alt="Stainless Steel Utility Cart">
+                    <span class="product-category">Equipment</span>
+                </div>
+                <div class="product-info">
+                    <h3>Mobile & Utility Carts</h3>
+                    <p>Stainless steel mobile carts, utility carts and laundry carts.</p>
+                    <a href="contact.html" class="product-link">INQUIRE ABOUT THIS PRODUCT →</a>
+                </div>
+            </div>
+
+            <div class="product-card" data-category="equipment">
+                <div class="product-image">
+                    <img src="assets/images/grease-trap.jpg" alt="Stainless Steel Grease Trap">
+                    <span class="product-category">Equipment</span>
+                </div>
+                <div class="product-info">
+                    <h3>Grease Traps</h3>
+                    <p>Customized grease traps available in 3–25 GPM capacities.</p>
+                    <a href="contact.html" class="product-link">INQUIRE ABOUT THIS PRODUCT →</a>
+                </div>
+            </div>
+
+            <div class="product-card" data-category="equipment">
+                <div class="product-image">
+                    <img src="assets/images/cashier-cabinet.jpg" alt="Cashier Cabinet">
+                    <span class="product-category">Equipment</span>
+                </div>
+                <div class="product-info">
+                    <h3>Cashier Cabinets</h3>
+                    <p>Customized stainless steel cashier cabinets for commercial establishments.</p>
+                    <a href="contact.html" class="product-link">INQUIRE ABOUT THIS PRODUCT →</a>
+                </div>
+            </div>
+
+            <div class="product-card" data-category="equipment">
+                <div class="product-image">
+                    <img src="assets/images/condiment-organizer.jpg" alt="Condiments Organizer">
+                    <span class="product-category">Equipment</span>
+                </div>
+                <div class="product-info">
+                    <h3>Condiments Organizers</h3>
+                    <p>Customized stainless steel condiment organizers and salad tables.</p>
+                    <a href="contact.html" class="product-link">INQUIRE ABOUT THIS PRODUCT →</a>
+                </div>
+            </div>
+
+            <div class="product-card" data-category="equipment">
+                <div class="product-image">
+                    <img src="assets/images/trench-canal.jpg" alt="Stainless Steel Trench Canal">
+                    <span class="product-category">Equipment</span>
+                </div>
+                <div class="product-info">
+                    <h3>Trench Canal</h3>
+                    <p>Customized stainless steel trench canal fabrication for kitchen setups.</p>
+                    <a href="contact.html" class="product-link">INQUIRE ABOUT THIS PRODUCT →</a>
+                </div>
+            </div>
+
+            <!-- EXHAUST SYSTEMS -->
+
+            <div class="product-card" data-category="exhaust">
+                <div class="product-image">
+                    <img src="assets/images/exhaust-wall.jpg" alt="Wall Mounted Exhaust Hood">
+                    <span class="product-category">Exhaust Systems</span>
+                </div>
+                <div class="product-info">
+                    <h3>Wall-Mounted Exhaust Hood</h3>
+                    <p>Customized exhaust hoods with or without fresh air systems.</p>
+                    <a href="contact.html" class="product-link">INQUIRE ABOUT THIS PRODUCT →</a>
+                </div>
+            </div>
+
+            <div class="product-card" data-category="exhaust">
+                <div class="product-image">
+                    <img src="assets/images/exhaust-island.jpg" alt="Island Exhaust Hood">
+                    <span class="product-category">Exhaust Systems</span>
+                </div>
+                <div class="product-info">
+                    <h3>Island Exhaust Hood</h3>
+                    <p>Island exhaust hood fabrication with or without fresh air systems.</p>
+                    <a href="contact.html" class="product-link">INQUIRE ABOUT THIS PRODUCT →</a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- CUSTOMIZED SOLUTIONS -->
+<section class="section-padding custom-section">
+    <div class="container custom-grid">
+
+        <div class="custom-image">
+            <img src="assets/images/custom-kitchen.jpg"
+                 alt="Customized Stainless Steel Kitchen">
+        </div>
+
+        <div class="custom-content">
+
+            <div class="eyebrow">Made to Order</div>
+
+            <h2>Have a Different Kitchen Requirement?</h2>
+
+            <p>
+                Aside from our listed products, CP ASIA ENTERPRISES
+                fabricates other customized stainless steel kitchen
+                equipment based on your specific requirements.
+            </p>
+
+            <p>
+                Whether you are setting up a restaurant, hotel,
+                commissary, milk tea shop or residential kitchen,
+                we can discuss a solution that fits your space and needs.
+            </p>
+
+            <ul class="custom-list">
+                <li>Customized dimensions and specifications</li>
+                <li>Site visits and actual measurements</li>
+                <li>Kitchen design and layout planning</li>
+                <li>Nationwide supply and delivery</li>
+            </ul>
+
+            <a href="contact.html" class="btn">DISCUSS YOUR PROJECT →</a>
+
+        </div>
+
+    </div>
+</section>
+
+<!-- CTA -->
+<section class="cta">
+    <div class="container cta-content">
+
+        <div>
+            <div class="eyebrow">Start Your Project</div>
+            <h2>Looking for Customized Kitchen Equipment?</h2>
+            <p>Contact us for product inquiries and quotation requests.</p>
+        </div>
+
+        <a href="contact.html" class="btn">REQUEST A QUOTATION →</a>
+
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+    <div class="container">
+
+        <div class="footer-grid">
+
+            <div class="footer-brand">
+                <img src="assets/images/logo.png" alt="CP Asia Logo">
+                <h3>CP ASIA ENTERPRISES</h3>
+                <p>
+                    Your trusted partner in customized stainless steel
+                    kitchen fabrication and commercial kitchen solutions.
+                </p>
+            </div>
+
+            <div>
+                <h4>QUICK LINKS</h4>
+                <a href="index.html">Home</a>
+                <a href="about_us.html">About Us</a>
+                <a href="products.html">Products</a>
+                <a href="services.html">Services</a>
+                <a href="projects.html">Projects</a>
+            </div>
+
+            <div>
+                <h4>OUR SERVICES</h4>
+                <a href="services.html">Custom Fabrication</a>
+                <a href="services.html">Kitchen Layout Planning</a>
+                <a href="services.html">Site Measurement</a>
+                <a href="services.html">Nationwide Delivery</a>
+                <a href="services.html">After-Sales Support</a>
+            </div>
+
+            <div>
+                <h4>CONTACT INFORMATION</h4>
+                <p>☎ 0998-573-7151</p>
+                <p>☎ 0939-915-6259</p>
+                <p>☎ 0917-525-1421</p>
+                <p>✉ ask.cpasiaenterprises@gmail.com</p>
+                <p>Lot 199 Mayor's Drive, GMA, Cavite</p>
+                <a href="https://www.facebook.com/stainlesskitchenfabricator"
+                   target="_blank" rel="noopener noreferrer">Facebook Page ↗</a>
+            </div>
+
+        </div>
+
+        <div class="copyright">
+            © 2026 CP ASIA ENTERPRISES. All Rights Reserved.
+            | Stainless Steel Kitchen Fabrication
+        </div>
+
+    </div>
+</footer>
+
+<!-- JAVASCRIPT -->
+<script>
+const menuToggle = document.getElementById('menuToggle');
+const navLinks = document.getElementById('navLinks');
+
+menuToggle.addEventListener('click', function() {
+    navLinks.classList.toggle('active');
+
+    const isOpen = navLinks.classList.contains('active');
+
+    menuToggle.setAttribute('aria-expanded', isOpen);
+    menuToggle.innerHTML = isOpen ? '&times;' : '☰';
+});
+
+document.querySelectorAll('.nav-links a').forEach(link => {
+    link.addEventListener('click', function() {
+        navLinks.classList.remove('active');
+        menuToggle.setAttribute('aria-expanded', 'false');
+        menuToggle.innerHTML = '☰';
+    });
+});
+
+// PRODUCT CATEGORY FILTER
+const filterButtons = document.querySelectorAll('.filter-btn');
+const productCards = document.querySelectorAll('.product-card');
+
+filterButtons.forEach(button => {
+
+    button.addEventListener('click', function() {
+
+        // Update active button
+        filterButtons.forEach(btn => btn.classList.remove('active'));
+        this.classList.add('active');
+
+        const filterValue = this.dataset.filter;
+
+        // Show matching products
+        productCards.forEach(card => {
+
+            if (filterValue === 'all' ||
+                card.dataset.category === filterValue) {
+
+                card.classList.remove('hidden');
+
+            } else {
+
+                card.classList.add('hidden');
+
+            }
+
+        });
+
+    });
+
+});
+</script>
+
+</body>
+</html>
