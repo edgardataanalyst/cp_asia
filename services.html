@@ -1,0 +1,1156 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Discover CP ASIA ENTERPRISES services including custom stainless steel fabrication, site visits, kitchen layout planning, nationwide delivery and after-sales support.">
+<title>Our Services | CP ASIA ENTERPRISES</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Montserrat:wght@500;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+:root {
+    --dark: #20252b;
+    --dark2: #11161c;
+    --orange: #e77d28;
+    --white: #fff;
+    --light: #f4f5f6;
+    --text: #60666d;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'DM Sans', sans-serif;
+    color: var(--dark);
+    background: white;
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+.container {
+    width: min(1200px, 90%);
+    margin: auto;
+}
+
+/* TOP BAR */
+
+.topbar {
+    background: var(--dark2);
+    color: #ddd;
+    padding: 10px 0;
+    font-size: 12px;
+}
+
+.topbar-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+}
+
+/* HEADER */
+
+header {
+    background: white;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 3px 15px rgba(0,0,0,.06);
+}
+
+.navbar {
+    min-height: 85px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.logo img {
+    width: 65px;
+    height: 65px;
+    object-fit: contain;
+}
+
+.logo-text strong {
+    display: block;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 17px;
+    font-weight: 800;
+    letter-spacing: 1px;
+}
+
+.logo-text span {
+    font-size: 10px;
+    color: var(--text);
+    letter-spacing: 2px;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    list-style: none;
+}
+
+.nav-links a {
+    font-size: 13px;
+    font-weight: 700;
+    transition: .3s;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+    color: var(--orange);
+}
+
+.nav-cta {
+    background: var(--orange);
+    color: white !important;
+    padding: 13px 21px;
+    border-radius: 3px;
+}
+
+.menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 28px;
+    cursor: pointer;
+    color: var(--dark);
+}
+
+/* HERO */
+
+.page-hero {
+    min-height: 390px;
+    display: flex;
+    align-items: center;
+    color: white;
+    background:
+        linear-gradient(90deg, rgba(13,18,24,.94), rgba(13,18,24,.45)),
+        url('assets/images/services-banner.jpg') center/cover no-repeat;
+}
+
+.page-hero-content {
+    padding: 85px 0;
+}
+
+.eyebrow {
+    color: var(--orange);
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    margin-bottom: 18px;
+}
+
+.page-hero h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: clamp(38px, 5vw, 58px);
+    margin-bottom: 20px;
+}
+
+.page-hero p {
+    color: #ddd;
+    font-size: 15px;
+    line-height: 1.8;
+    max-width: 620px;
+}
+
+.breadcrumb {
+    margin-top: 25px;
+    font-size: 12px;
+    color: #ccc;
+}
+
+.breadcrumb a {
+    color: var(--orange);
+}
+
+/* GENERAL */
+
+.section-padding {
+    padding: 85px 0;
+}
+
+.section-heading {
+    max-width: 700px;
+    margin: 0 auto 45px;
+    text-align: center;
+}
+
+.section-heading h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: clamp(27px, 3vw, 37px);
+    line-height: 1.3;
+    margin-bottom: 15px;
+}
+
+.section-heading p {
+    color: var(--text);
+    font-size: 14px;
+    line-height: 1.9;
+}
+
+/* INTRODUCTION */
+
+.intro-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+}
+
+.intro-image img {
+    width: 100%;
+    height: 420px;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+.intro-content h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 34px;
+    line-height: 1.35;
+    margin-bottom: 20px;
+}
+
+.intro-content p {
+    color: var(--text);
+    font-size: 14px;
+    line-height: 1.9;
+    margin-bottom: 18px;
+}
+
+/* SERVICES */
+
+.services-section {
+    background: var(--light);
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+}
+
+.service-card {
+    background: white;
+    border-radius: 4px;
+    overflow: hidden;
+    box-shadow: 0 5px 20px rgba(0,0,0,.04);
+    transition: .3s;
+}
+
+.service-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 30px rgba(0,0,0,.10);
+}
+
+.service-card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+
+.service-info {
+    padding: 25px;
+}
+
+.service-icon {
+    width: 48px;
+    height: 48px;
+    background: #fff0e5;
+    color: var(--orange);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 23px;
+    border-radius: 4px;
+    margin-bottom: 18px;
+}
+
+.service-info h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 17px;
+    margin-bottom: 12px;
+}
+
+.service-info p {
+    font-size: 13px;
+    color: var(--text);
+    line-height: 1.8;
+}
+
+/* CUSTOM FABRICATION */
+
+.fabrication {
+    background: var(--dark);
+    color: white;
+}
+
+.fabrication-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+}
+
+.fabrication-image img {
+    width: 100%;
+    height: 430px;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+.fabrication-content h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 34px;
+    line-height: 1.4;
+    margin-bottom: 20px;
+}
+
+.fabrication-content p {
+    font-size: 14px;
+    color: #c3c8ce;
+    line-height: 1.9;
+    margin-bottom: 18px;
+}
+
+.fabrication-list {
+    list-style: none;
+    margin: 22px 0;
+}
+
+.fabrication-list li {
+    padding: 9px 0;
+    font-size: 13px;
+}
+
+.fabrication-list li::before {
+    content: "✓";
+    color: var(--orange);
+    margin-right: 12px;
+    font-weight: 800;
+}
+
+/* PROCESS */
+
+.process-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+}
+
+.process-card {
+    padding: 28px 22px;
+    background: var(--light);
+    border-radius: 4px;
+}
+
+.process-number {
+    color: var(--orange);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 38px;
+    font-weight: 800;
+    margin-bottom: 15px;
+}
+
+.process-card h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    margin-bottom: 12px;
+}
+
+.process-card p {
+    color: var(--text);
+    font-size: 13px;
+    line-height: 1.8;
+}
+
+/* INDUSTRIES */
+
+.industries {
+    background: var(--dark);
+    color: white;
+}
+
+.industries .section-heading p {
+    color: #c3c8ce;
+}
+
+.industry-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 18px;
+}
+
+.industry-card {
+    border: 1px solid #454b52;
+    border-radius: 4px;
+    padding: 25px 15px;
+    text-align: center;
+    transition: .3s;
+}
+
+.industry-card:hover {
+    border-color: var(--orange);
+    background: #30363d;
+}
+
+.industry-card span {
+    display: block;
+    font-size: 30px;
+    margin-bottom: 12px;
+}
+
+.industry-card h3 {
+    font-size: 13px;
+}
+
+/* CTA */
+
+.cta {
+    padding: 75px 0;
+    background: var(--light);
+}
+
+.cta-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+}
+
+.cta h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: clamp(25px, 3vw, 35px);
+    margin-bottom: 12px;
+}
+
+.cta p {
+    color: var(--text);
+    font-size: 14px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 15px 26px;
+    background: var(--orange);
+    color: white;
+    font-size: 12px;
+    font-weight: 800;
+    border-radius: 3px;
+    transition: .3s;
+}
+
+.btn:hover {
+    background: var(--dark);
+}
+
+/* FOOTER */
+
+footer {
+    background: #0d1116;
+    color: white;
+    padding: 65px 0 20px;
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr 1fr 1.3fr;
+    gap: 35px;
+    margin-bottom: 45px;
+}
+
+.footer-brand img {
+    width: 70px;
+    margin-bottom: 15px;
+    background: white;
+    border-radius: 5px;
+}
+
+.footer-grid h3,
+.footer-grid h4 {
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 17px;
+}
+
+.footer-grid h3 {
+    font-size: 17px;
+}
+
+.footer-grid h4 {
+    font-size: 14px;
+}
+
+.footer-grid p,
+.footer-grid a {
+    display: block;
+    color: #b8bec4;
+    font-size: 12px;
+    line-height: 2.2;
+}
+
+.footer-grid a:hover {
+    color: var(--orange);
+}
+
+.copyright {
+    border-top: 1px solid #30363d;
+    padding-top: 20px;
+    text-align: center;
+    color: #999;
+    font-size: 11px;
+}
+
+/* TABLET */
+
+@media(max-width: 1024px) {
+    .nav-links {
+        gap: 16px;
+    }
+
+    .nav-links a {
+        font-size: 11px;
+    }
+
+    .services-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .process-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .industry-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .footer-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* MOBILE */
+
+@media(max-width: 767px) {
+    .topbar-content {
+        justify-content: center;
+        text-align: center;
+    }
+
+    .topbar-content span:last-child {
+        display: none;
+    }
+
+    .navbar {
+        min-height: 72px;
+    }
+
+    .logo img {
+        width: 52px;
+        height: 52px;
+    }
+
+    .logo-text strong {
+        font-size: 14px;
+    }
+
+    .logo-text span {
+        font-size: 8px;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .nav-links {
+        display: none;
+        position: absolute;
+        top: 72px;
+        left: 0;
+        width: 100%;
+        background: white;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 0;
+        padding: 10px 5%;
+        box-shadow: 0 10px 15px rgba(0,0,0,.08);
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .nav-links li a {
+        display: block;
+        padding: 15px 5px;
+        font-size: 13px;
+    }
+
+    .nav-cta {
+        text-align: center;
+        margin: 8px 0;
+    }
+
+    .page-hero {
+        min-height: 330px;
+    }
+
+    .page-hero-content {
+        padding: 65px 0;
+    }
+
+    .page-hero h1 {
+        font-size: 38px;
+    }
+
+    .page-hero p {
+        font-size: 13px;
+    }
+
+    .section-padding {
+        padding: 65px 0;
+    }
+
+    .intro-grid,
+    .fabrication-grid {
+        grid-template-columns: 1fr;
+        gap: 35px;
+    }
+
+    .intro-image img,
+    .fabrication-image img {
+        height: 290px;
+    }
+
+    .intro-content h2,
+    .fabrication-content h2 {
+        font-size: 28px;
+    }
+
+    .services-grid,
+    .process-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .service-card img {
+        height: 230px;
+    }
+
+    .industry-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 12px;
+    }
+
+    .industry-card {
+        padding: 20px 10px;
+    }
+
+    .cta-content {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .footer-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+}
+
+@media(max-width: 380px) {
+    .page-hero h1 {
+        font-size: 32px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<!-- TOP BAR -->
+<div class="topbar">
+    <div class="container topbar-content">
+        <span>✉ ask.cpasiaenterprises@gmail.com</span>
+        <span>☎ 0998-573-7151 | Nationwide Delivery</span>
+    </div>
+</div>
+
+<!-- NAVIGATION -->
+<header>
+    <div class="container navbar">
+
+        <a href="index.html" class="logo">
+            <img src="assets/images/logo.png" alt="CP Asia Logo">
+            <div class="logo-text">
+                <strong>CP ASIA ENTERPRISES</strong>
+                <span>STAINLESS KITCHEN FABRICATION</span>
+            </div>
+        </a>
+
+        <button class="menu-toggle" id="menuToggle"
+                aria-label="Toggle navigation" aria-expanded="false">
+            ☰
+        </button>
+
+        <ul class="nav-links" id="navLinks">
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="about.html">ABOUT US</a></li>
+            <li><a href="products.html">PRODUCTS</a></li>
+            <li><a href="services.html" class="active">SERVICES</a></li>
+            <li><a href="projects.html">PROJECTS</a></li>
+            <li><a href="contact.html" class="nav-cta">GET A QUOTE</a></li>
+        </ul>
+
+    </div>
+</header>
+
+<!-- HERO -->
+<section class="page-hero">
+    <div class="container page-hero-content">
+
+        <div class="eyebrow">What We Offer</div>
+
+        <h1>Our Services</h1>
+
+        <p>
+            From customized stainless steel fabrication to kitchen
+            design and layout planning, CP ASIA ENTERPRISES provides
+            dependable solutions for commercial and residential kitchens.
+        </p>
+
+        <div class="breadcrumb">
+            <a href="index.html">Home</a> &nbsp; / &nbsp; Services
+        </div>
+
+    </div>
+</section>
+
+<!-- INTRODUCTION -->
+<section class="section-padding">
+    <div class="container intro-grid">
+
+        <div class="intro-image">
+            <img src="assets/images/service-intro.jpg"
+                 alt="CP Asia Stainless Steel Kitchen Fabrication">
+        </div>
+
+        <div class="intro-content">
+
+            <div class="eyebrow">Complete Kitchen Solutions</div>
+
+            <h2>Designed Around Your Kitchen Requirements.</h2>
+
+            <p>
+                CP ASIA ENTERPRISES supports foodservice professionals
+                by providing high-quality kitchen equipment and reliable
+                after-sales service for the food and beverage industry.
+            </p>
+
+            <p>
+                We specialize in made-to-order stainless steel kitchen
+                equipment and customized solutions for restaurants,
+                hotels, resorts, commissaries, factories, milk tea shops,
+                residential kitchens and other establishments.
+            </p>
+
+            <p>
+                Our services include site visits, actual measurements,
+                design and layout planning, nationwide supply and
+                dependable after-sales support.
+            </p>
+
+            <a href="products.html" class="btn">EXPLORE OUR PRODUCTS →</a>
+
+        </div>
+
+    </div>
+</section>
+
+<!-- MAIN SERVICES -->
+<section class="section-padding services-section">
+    <div class="container">
+
+        <div class="section-heading">
+            <div class="eyebrow">Our Expertise</div>
+            <h2>Services We Provide</h2>
+            <p>
+                Practical and customized stainless steel kitchen
+                solutions designed to meet your establishment's needs.
+            </p>
+        </div>
+
+        <div class="services-grid">
+
+            <div class="service-card">
+                <img src="assets/images/custom-fabrication.jpg"
+                     alt="Custom Stainless Steel Fabrication">
+                <div class="service-info">
+                    <div class="service-icon">⚙</div>
+                    <h3>Custom Stainless Steel Fabrication</h3>
+                    <p>
+                        We specialize in made-to-order and customized
+                        stainless steel kitchen equipment, fabricated
+                        according to client specifications and needs.
+                    </p>
+                </div>
+            </div>
+
+            <div class="service-card">
+                <img src="assets/images/site-visit.jpg"
+                     alt="Kitchen Site Visit and Measurement">
+                <div class="service-info">
+                    <div class="service-icon">📐</div>
+                    <h3>Site Visits & Actual Measurements</h3>
+                    <p>
+                        We conduct site visits and take actual
+                        measurements to help determine the appropriate
+                        equipment dimensions and kitchen requirements.
+                    </p>
+                </div>
+            </div>
+
+            <div class="service-card">
+                <img src="assets/images/kitchen-layout.jpg"
+                     alt="Kitchen Design and Layout Planning">
+                <div class="service-info">
+                    <div class="service-icon">✎</div>
+                    <h3>Kitchen Design & Layout Planning</h3>
+                    <p>
+                        We provide kitchen design and layout plans
+                        based on the client's requirements and
+                        available kitchen space.
+                    </p>
+                </div>
+            </div>
+
+            <div class="service-card">
+                <img src="assets/images/nationwide-delivery.jpg"
+                     alt="Nationwide Supply and Delivery">
+                <div class="service-info">
+                    <div class="service-icon">🚚</div>
+                    <h3>Nationwide Supply & Delivery</h3>
+                    <p>
+                        We supply and deliver customized stainless
+                        steel kitchen equipment to clients nationwide.
+                    </p>
+                </div>
+            </div>
+
+            <div class="service-card">
+                <img src="assets/images/kitchen-setup.jpg"
+                     alt="Commercial Kitchen Setup">
+                <div class="service-info">
+                    <div class="service-icon">▣</div>
+                    <h3>Kitchen Setup Solutions</h3>
+                    <p>
+                        We handle different kitchen setups, including
+                        commissaries, canteens, private kitchens,
+                        water stations, milk tea shops, condominium
+                        kitchens and commercial kitchens.
+                    </p>
+                </div>
+            </div>
+
+            <div class="service-card">
+                <img src="assets/images/after-sales.jpg"
+                     alt="After Sales Service">
+                <div class="service-info">
+                    <div class="service-icon">✓</div>
+                    <h3>After-Sales Service & Warranty</h3>
+                    <p>
+                        We provide dependable after-sales service
+                        and warranty support for our fabricated
+                        kitchen equipment.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+<!-- CUSTOM FABRICATION -->
+<section class="section-padding fabrication">
+    <div class="container fabrication-grid">
+
+        <div class="fabrication-image">
+            <img src="assets/images/fabrication-workshop.jpg"
+                 alt="Stainless Steel Fabrication Workshop">
+        </div>
+
+        <div class="fabrication-content">
+
+            <div class="eyebrow">Quality & Durability</div>
+
+            <h2>Quality Materials. Customized Fabrication.</h2>
+
+            <p>
+                Our kitchen equipment is crafted using SS 304
+                food-grade stainless steel, selected for its
+                durability, anti-corrosion properties, long life
+                and clean professional appearance.
+            </p>
+
+            <p>
+                We focus on providing equipment that fits the
+                individual requirements of different kitchen
+                environments.
+            </p>
+
+            <ul class="fabrication-list">
+                <li>SS 304 Food-Grade Stainless Steel</li>
+                <li>Made-to-Order Equipment</li>
+                <li>Customized Dimensions and Specifications</li>
+                <li>Commercial and Residential Applications</li>
+            </ul>
+
+            <a href="products.html" class="btn">VIEW OUR PRODUCTS →</a>
+
+        </div>
+
+    </div>
+</section>
+
+<!-- HOW WE WORK -->
+<section class="section-padding">
+    <div class="container">
+
+        <div class="section-heading">
+            <div class="eyebrow">Our Approach</div>
+            <h2>How We Work With You</h2>
+            <p>
+                Our process is centered on understanding your
+                requirements and providing customized kitchen solutions.
+            </p>
+        </div>
+
+        <div class="process-grid">
+
+            <div class="process-card">
+                <div class="process-number">01</div>
+                <h3>Consultation</h3>
+                <p>
+                    Discuss your kitchen requirements, equipment
+                    preferences and project needs.
+                </p>
+            </div>
+
+            <div class="process-card">
+                <div class="process-number">02</div>
+                <h3>Site Assessment</h3>
+                <p>
+                    Conduct site visits and actual measurements
+                    based on the project requirements.
+                </p>
+            </div>
+
+            <div class="process-card">
+                <div class="process-number">03</div>
+                <h3>Design & Fabrication</h3>
+                <p>
+                    Prepare design and layout plans and fabricate
+                    customized stainless steel equipment.
+                </p>
+            </div>
+
+            <div class="process-card">
+                <div class="process-number">04</div>
+                <h3>Supply & Support</h3>
+                <p>
+                    Arrange supply and delivery with after-sales
+                    service and warranty support.
+                </p>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+<!-- INDUSTRIES -->
+<section class="section-padding industries">
+    <div class="container">
+
+        <div class="section-heading">
+            <div class="eyebrow">Our Clients</div>
+            <h2>Industries We Serve</h2>
+            <p>
+                We provide customized stainless steel kitchen
+                equipment for different types of establishments.
+            </p>
+        </div>
+
+        <div class="industry-grid">
+
+            <div class="industry-card">
+                <span>🏨</span>
+                <h3>Hotels & Resorts</h3>
+            </div>
+
+            <div class="industry-card">
+                <span>🍽️</span>
+                <h3>Restaurants</h3>
+            </div>
+
+            <div class="industry-card">
+                <span>🏭</span>
+                <h3>Factories & Commissaries</h3>
+            </div>
+
+            <div class="industry-card">
+                <span>🏪</span>
+                <h3>Convenience Stores</h3>
+            </div>
+
+            <div class="industry-card">
+                <span>🥤</span>
+                <h3>Milk Tea Shops</h3>
+            </div>
+
+            <div class="industry-card">
+                <span>🏠</span>
+                <h3>Residential Kitchens</h3>
+            </div>
+
+            <div class="industry-card">
+                <span>🏢</span>
+                <h3>Condominium Units</h3>
+            </div>
+
+            <div class="industry-card">
+                <span>🏛️</span>
+                <h3>Government & Private Establishments</h3>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+<!-- CTA -->
+<section class="cta">
+    <div class="container cta-content">
+
+        <div>
+            <div class="eyebrow">Start Your Kitchen Project</div>
+            <h2>Let's Build the Right Kitchen for You.</h2>
+            <p>
+                Contact CP ASIA ENTERPRISES for customized
+                stainless steel kitchen equipment and inquiries.
+            </p>
+        </div>
+
+        <a href="contact.html" class="btn">CONTACT US TODAY →</a>
+
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+    <div class="container">
+
+        <div class="footer-grid">
+
+            <div class="footer-brand">
+                <img src="assets/images/logo.png" alt="CP Asia Logo">
+                <h3>CP ASIA ENTERPRISES</h3>
+                <p>
+                    Your trusted partner in customized stainless steel
+                    kitchen fabrication and commercial kitchen solutions.
+                </p>
+            </div>
+
+            <div>
+                <h4>QUICK LINKS</h4>
+                <a href="index.html">Home</a>
+                <a href="about.html">About Us</a>
+                <a href="products.html">Products</a>
+                <a href="services.html">Services</a>
+                <a href="projects.html">Projects</a>
+            </div>
+
+            <div>
+                <h4>OUR SERVICES</h4>
+                <a href="services.html">Custom Fabrication</a>
+                <a href="services.html">Kitchen Layout Planning</a>
+                <a href="services.html">Site Measurement</a>
+                <a href="services.html">Nationwide Delivery</a>
+                <a href="services.html">After-Sales Support</a>
+            </div>
+
+            <div>
+                <h4>CONTACT INFORMATION</h4>
+                <p>☎ 0998-573-7151</p>
+                <p>☎ 0939-915-6259</p>
+                <p>☎ 0917-525-1421</p>
+                <p>✉ ask.cpasiaenterprises@gmail.com</p>
+                <p>Lot 199 Mayor's Drive, GMA, Cavite</p>
+                <a href="https://www.facebook.com/stainlesskitchenfabricator"
+                   target="_blank" rel="noopener noreferrer">Facebook Page ↗</a>
+            </div>
+
+        </div>
+
+        <div class="copyright">
+            © 2026 CP ASIA ENTERPRISES. All Rights Reserved.
+            | Stainless Steel Kitchen Fabrication
+        </div>
+
+    </div>
+</footer>
+
+<!-- JAVASCRIPT -->
+<script>
+const menuToggle = document.getElementById('menuToggle');
+const navLinks = document.getElementById('navLinks');
+
+menuToggle.addEventListener('click', function() {
+    navLinks.classList.toggle('active');
+
+    const isOpen = navLinks.classList.contains('active');
+
+    menuToggle.setAttribute('aria-expanded', isOpen);
+    menuToggle.innerHTML = isOpen ? '&times;' : '☰';
+});
+
+document.querySelectorAll('.nav-links a').forEach(link => {
+    link.addEventListener('click', function() {
+        navLinks.classList.remove('active');
+        menuToggle.setAttribute('aria-expanded', 'false');
+        menuToggle.innerHTML = '☰';
+    });
+});
+</script>
+
+</body>
+</html>
