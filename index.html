@@ -1,0 +1,1162 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="CP ASIA ENTERPRISES specializes in customized stainless steel kitchen fabrication and commercial kitchen solutions.">
+    <title>CP ASIA ENTERPRISES | Stainless Steel Kitchen Fabrication</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Montserrat:wght@500;600;700;800&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            --dark: #20252b;
+            --dark2: #11161c;
+            --silver: #b8bec4;
+            --orange: #e77d28;
+            --white: #ffffff;
+            --light: #f4f5f6;
+            --text: #60666d;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'DM Sans', sans-serif;
+            color: var(--dark);
+            background: var(--white);
+            overflow-x: hidden;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        img {
+            max-width: 100%;
+            display: block;
+        }
+
+        .container {
+            width: min(1200px, 90%);
+            margin: auto;
+        }
+
+        /* TOP BAR */
+
+        .topbar {
+            background: var(--dark2);
+            color: #ddd;
+            padding: 10px 0;
+            font-size: 12px;
+        }
+
+        .topbar-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .topbar a:hover {
+            color: var(--orange);
+        }
+
+        /* NAVIGATION */
+
+        header {
+            background: #fff;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 3px 15px rgba(0,0,0,0.06);
+        }
+
+        .navbar {
+            min-height: 85px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .logo img {
+            width: 65px;
+            height: 65px;
+            object-fit: contain;
+        }
+
+        .logo-text strong {
+            display: block;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 17px;
+            font-weight: 800;
+            letter-spacing: 1px;
+        }
+
+        .logo-text span {
+            font-size: 10px;
+            color: var(--text);
+            letter-spacing: 2px;
+        }
+
+        .nav-links {
+            display: flex;
+            align-items: center;
+            gap: 30px;
+            list-style: none;
+        }
+
+        .nav-links a {
+            font-size: 13px;
+            font-weight: 700;
+            transition: .3s;
+        }
+
+        .nav-links a:hover {
+            color: var(--orange);
+        }
+
+        .nav-cta {
+            background: var(--orange);
+            color: white !important;
+            padding: 13px 21px;
+            border-radius: 3px;
+        }
+
+        .nav-cta:hover {
+            background: var(--dark);
+        }
+
+        .menu-toggle {
+            display: none;
+            background: none;
+            border: none;
+            font-size: 28px;
+            cursor: pointer;
+            color: var(--dark);
+        }
+
+        /* HERO SECTION */
+
+        .hero {
+            min-height: 650px;
+            display: flex;
+            align-items: center;
+            position: relative;
+            background:
+                linear-gradient(90deg, rgba(13,18,24,.94) 0%, rgba(13,18,24,.80) 48%, rgba(13,18,24,.28) 100%),
+                url('assets/images/hero-kitchen.jpg') center/cover no-repeat;
+            color: white;
+        }
+
+        .hero-content {
+            max-width: 720px;
+            padding: 100px 0;
+        }
+
+        .eyebrow {
+            color: var(--orange);
+            font-size: 12px;
+            font-weight: 800;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            margin-bottom: 22px;
+        }
+
+        .hero h1 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: clamp(38px, 5.5vw, 68px);
+            line-height: 1.13;
+            font-weight: 800;
+            margin-bottom: 25px;
+        }
+
+        .hero h1 span {
+            color: var(--orange);
+        }
+
+        .hero p {
+            max-width: 570px;
+            color: #d6d9dc;
+            line-height: 1.9;
+            font-size: 16px;
+            margin-bottom: 35px;
+        }
+
+        .hero-buttons {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 15px 27px;
+            font-size: 13px;
+            font-weight: 800;
+            border-radius: 3px;
+            transition: .3s;
+        }
+
+        .btn-primary {
+            background: var(--orange);
+            color: white;
+        }
+
+        .btn-primary:hover {
+            background: white;
+            color: var(--dark);
+        }
+
+        .btn-outline {
+            border: 1px solid white;
+            color: white;
+        }
+
+        .btn-outline:hover {
+            background: white;
+            color: var(--dark);
+        }
+
+        /* STATS */
+
+        .stats {
+            background: var(--dark);
+            color: white;
+            padding: 35px 0;
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            text-align: center;
+            gap: 20px;
+        }
+
+        .stat h2 {
+            color: var(--orange);
+            font-family: 'Montserrat', sans-serif;
+            font-size: 30px;
+            margin-bottom: 5px;
+        }
+
+        .stat p {
+            color: #c3c8ce;
+            font-size: 12px;
+            letter-spacing: 1px;
+        }
+
+        /* SECTION GENERAL */
+
+        section {
+            scroll-margin-top: 95px;
+        }
+
+        .section-padding {
+            padding: 95px 0;
+        }
+
+        .section-heading {
+            max-width: 650px;
+            margin-bottom: 45px;
+        }
+
+        .section-heading.center {
+            text-align: center;
+            margin: 0 auto 45px;
+        }
+
+        .section-heading h2 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: clamp(27px, 3vw, 39px);
+            line-height: 1.3;
+            margin-bottom: 15px;
+        }
+
+        .section-heading p {
+            color: var(--text);
+            line-height: 1.8;
+            font-size: 14px;
+        }
+
+        /* ABOUT */
+
+        .about-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 65px;
+            align-items: center;
+        }
+
+        .about-image {
+            position: relative;
+        }
+
+        .about-image img {
+            width: 100%;
+            height: 440px;
+            object-fit: cover;
+            border-radius: 4px;
+        }
+
+        .about-badge {
+            position: absolute;
+            bottom: 25px;
+            right: -20px;
+            background: var(--orange);
+            color: white;
+            padding: 20px 27px;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 800;
+            border-radius: 3px;
+        }
+
+        .about-content h2 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 36px;
+            line-height: 1.3;
+            margin-bottom: 20px;
+        }
+
+        .about-content p {
+            color: var(--text);
+            line-height: 1.9;
+            font-size: 14px;
+            margin-bottom: 18px;
+        }
+
+        .check-list {
+            list-style: none;
+            margin: 25px 0;
+        }
+
+        .check-list li {
+            padding: 9px 0;
+            font-size: 14px;
+            font-weight: 600;
+        }
+
+        .check-list li::before {
+            content: "✓";
+            color: var(--orange);
+            font-weight: 800;
+            margin-right: 12px;
+        }
+
+        /* PRODUCTS */
+
+        .products {
+            background: var(--light);
+        }
+
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 24px;
+        }
+
+        .product-card {
+            background: white;
+            overflow: hidden;
+            border-radius: 4px;
+            transition: .3s;
+            box-shadow: 0 5px 20px rgba(0,0,0,.04);
+        }
+
+        .product-card:hover {
+            transform: translateY(-7px);
+            box-shadow: 0 12px 30px rgba(0,0,0,.10);
+        }
+
+        .product-card img {
+            width: 100%;
+            height: 220px;
+            object-fit: cover;
+        }
+
+        .product-info {
+            padding: 24px;
+        }
+
+        .product-info h3 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 17px;
+            margin-bottom: 10px;
+        }
+
+        .product-info p {
+            font-size: 13px;
+            color: var(--text);
+            line-height: 1.7;
+        }
+
+        .product-link {
+            display: inline-block;
+            margin-top: 18px;
+            font-size: 12px;
+            color: var(--orange);
+            font-weight: 800;
+        }
+
+        /* WHY CHOOSE US */
+
+        .why-us {
+            background: var(--dark);
+            color: white;
+        }
+
+        .why-us .section-heading p {
+            color: #c3c8ce;
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 25px;
+        }
+
+        .feature {
+            padding: 30px 23px;
+            border: 1px solid #41474e;
+            border-radius: 4px;
+            transition: .3s;
+        }
+
+        .feature:hover {
+            border-color: var(--orange);
+            background: #292f36;
+        }
+
+        .feature-icon {
+            font-size: 32px;
+            margin-bottom: 20px;
+        }
+
+        .feature h3 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 16px;
+            margin-bottom: 12px;
+        }
+
+        .feature p {
+            font-size: 13px;
+            line-height: 1.8;
+            color: #c3c8ce;
+        }
+
+        /* PROJECTS */
+
+        .project-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 22px;
+        }
+
+        .project-card {
+            position: relative;
+            height: 270px;
+            overflow: hidden;
+            border-radius: 4px;
+            background: var(--dark);
+        }
+
+        .project-card img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: .5s;
+        }
+
+        .project-card:hover img {
+            transform: scale(1.08);
+        }
+
+        .project-overlay {
+            position: absolute;
+            inset: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            padding: 25px;
+            color: white;
+            background: linear-gradient(transparent, rgba(0,0,0,.85));
+        }
+
+        .project-overlay h3 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 17px;
+        }
+
+        .project-overlay p {
+            font-size: 12px;
+            color: #ddd;
+            margin-top: 6px;
+        }
+
+        /* CTA */
+
+        .cta {
+            background: linear-gradient(100deg, #252b32, #11161c);
+            color: white;
+            padding: 75px 0;
+        }
+
+        .cta-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 30px;
+        }
+
+        .cta h2 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: clamp(25px, 3vw, 36px);
+            margin-bottom: 12px;
+        }
+
+        .cta p {
+            color: #c3c8ce;
+            font-size: 14px;
+        }
+
+        /* FOOTER */
+
+        footer {
+            background: #0d1116;
+            color: white;
+            padding: 65px 0 20px;
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: 1.5fr 1fr 1fr 1.3fr;
+            gap: 35px;
+            margin-bottom: 45px;
+        }
+
+        .footer-brand img {
+            width: 70px;
+            margin-bottom: 15px;
+            background: white;
+            border-radius: 5px;
+        }
+
+        .footer-brand h3 {
+            font-family: 'Montserrat', sans-serif;
+            margin-bottom: 15px;
+        }
+
+        .footer-grid h4 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 14px;
+            margin-bottom: 20px;
+        }
+
+        .footer-grid p,
+        .footer-grid a {
+            display: block;
+            font-size: 12px;
+            line-height: 2.2;
+            color: #b8bec4;
+        }
+
+        .footer-grid a:hover {
+            color: var(--orange);
+        }
+
+        .copyright {
+            border-top: 1px solid #30363d;
+            padding-top: 20px;
+            text-align: center;
+            font-size: 11px;
+            color: #999;
+        }
+
+        /* TABLET */
+
+        @media (max-width: 1024px) {
+            .nav-links {
+                gap: 17px;
+            }
+
+            .nav-links a {
+                font-size: 12px;
+            }
+
+            .features-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .footer-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .about-grid {
+                gap: 40px;
+            }
+        }
+
+        /* MOBILE */
+
+        @media (max-width: 767px) {
+            .topbar-content {
+                justify-content: center;
+                text-align: center;
+                flex-wrap: wrap;
+            }
+
+            .topbar-content span:last-child {
+                display: none;
+            }
+
+            .navbar {
+                min-height: 72px;
+            }
+
+            .logo img {
+                width: 52px;
+                height: 52px;
+            }
+
+            .logo-text strong {
+                font-size: 14px;
+            }
+
+            .logo-text span {
+                font-size: 8px;
+            }
+
+            .menu-toggle {
+                display: block;
+            }
+
+            .nav-links {
+                display: none;
+                position: absolute;
+                top: 72px;
+                left: 0;
+                width: 100%;
+                background: white;
+                flex-direction: column;
+                align-items: stretch;
+                gap: 0;
+                padding: 10px 5%;
+                box-shadow: 0 10px 15px rgba(0,0,0,.08);
+            }
+
+            .nav-links.active {
+                display: flex;
+            }
+
+            .nav-links li a {
+                display: block;
+                padding: 15px 5px;
+                font-size: 13px;
+            }
+
+            .nav-cta {
+                display: inline-block !important;
+                text-align: center;
+                margin: 8px 0;
+            }
+
+            .hero {
+                min-height: 580px;
+                background-position: center;
+            }
+
+            .hero-content {
+                padding: 75px 0;
+            }
+
+            .hero h1 {
+                font-size: 40px;
+            }
+
+            .hero p {
+                font-size: 14px;
+            }
+
+            .stats-grid {
+                grid-template-columns: repeat(2, 1fr);
+                row-gap: 30px;
+            }
+
+            .stat h2 {
+                font-size: 25px;
+            }
+
+            .section-padding {
+                padding: 65px 0;
+            }
+
+            .about-grid {
+                grid-template-columns: 1fr;
+                gap: 35px;
+            }
+
+            .about-image img {
+                height: 300px;
+            }
+
+            .about-badge {
+                right: 10px;
+            }
+
+            .about-content h2 {
+                font-size: 29px;
+            }
+
+            .product-grid,
+            .project-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .product-card img {
+                height: 230px;
+            }
+
+            .features-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .project-card {
+                height: 260px;
+            }
+
+            .cta-content {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .footer-grid {
+                grid-template-columns: 1fr;
+                gap: 30px;
+            }
+        }
+
+        /* SMALL MOBILE */
+
+        @media (max-width: 380px) {
+            .hero h1 {
+                font-size: 34px;
+            }
+
+            .hero-buttons {
+                flex-direction: column;
+            }
+
+            .btn {
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- TOP BAR -->
+    <div class="topbar">
+        <div class="container topbar-content">
+            <span>✉ ask.cpasiaenterprises@gmail.com</span>
+            <span>☎ 0998-573-7151 &nbsp; | &nbsp; Nationwide Delivery</span>
+        </div>
+    </div>
+
+    <!-- NAVIGATION -->
+    <header>
+        <div class="container navbar">
+
+            <a href="index.html" class="logo">
+                <img src="assets/images/logo.png" alt="CP Asia Enterprises Logo">
+                <div class="logo-text">
+                    <strong>CP ASIA ENTERPRISES</strong>
+                    <span>STAINLESS KITCHEN FABRICATION</span>
+                </div>
+            </a>
+
+            <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation" aria-expanded="false">
+                ☰
+            </button>
+
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="about.html">ABOUT US</a></li>
+                <li><a href="products.html">PRODUCTS</a></li>
+                <li><a href="services.html">SERVICES</a></li>
+                <li><a href="projects.html">PROJECTS</a></li>
+                <li><a href="contact.html" class="nav-cta">GET A QUOTE</a></li>
+            </ul>
+
+        </div>
+    </header>
+
+    <!-- HERO -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+
+                <div class="eyebrow">Established 2016 · Stainless Steel Fabrication</div>
+
+                <h1>
+                    Built for Excellence.<br>
+                    Crafted in <span>Stainless.</span>
+                </h1>
+
+                <p>
+                    Your trusted partner in customized stainless steel kitchen
+                    fabrication. We design and manufacture quality kitchen
+                    equipment tailored to your business and residential needs.
+                </p>
+
+                <div class="hero-buttons">
+                    <a href="products.html" class="btn btn-primary">EXPLORE OUR PRODUCTS →</a>
+                    <a href="contact.html" class="btn btn-outline">REQUEST A QUOTE</a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- COMPANY STATS -->
+    <section class="stats">
+        <div class="container stats-grid">
+
+            <div class="stat">
+                <h2>2016</h2>
+                <p>ESTABLISHED</p>
+            </div>
+
+            <div class="stat">
+                <h2>SS 304</h2>
+                <p>FOOD-GRADE MATERIAL</p>
+            </div>
+
+            <div class="stat">
+                <h2>100%</h2>
+                <p>CUSTOMIZED SOLUTIONS</p>
+            </div>
+
+            <div class="stat">
+                <h2>Nationwide</h2>
+                <p>SUPPLY & DELIVERY</p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="section-padding" id="about">
+        <div class="container about-grid">
+
+            <div class="about-image">
+                <img src="assets/images/about-kitchen.jpg" alt="CP Asia Stainless Steel Kitchen Fabrication">
+                <div class="about-badge">Since 2016</div>
+            </div>
+
+            <div class="about-content">
+
+                <div class="eyebrow">Who We Are</div>
+
+                <h2>Quality Fabrication. Reliable Kitchen Solutions.</h2>
+
+                <p>
+                    CP ASIA ENTERPRISES is a family-owned business committed
+                    to supporting foodservice professionals through high-quality
+                    equipment and dependable after-sales service.
+                </p>
+
+                <p>
+                    We specialize in made-to-order and customized stainless steel
+                    kitchen equipment for hotels, resorts, restaurants, commissaries,
+                    factories, milk tea shops, residential kitchens and more.
+                </p>
+
+                <ul class="check-list">
+                    <li>SS 304 Food-Grade Stainless Steel</li>
+                    <li>Customized Kitchen Equipment</li>
+                    <li>Site Visits and Actual Measurements</li>
+                    <li>Design and Layout Planning</li>
+                    <li>After-Sales Service and Warranty Support</li>
+                </ul>
+
+                <a href="about.html" class="btn btn-primary">LEARN MORE ABOUT US →</a>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- PRODUCTS -->
+    <section class="section-padding products" id="products">
+        <div class="container">
+
+            <div class="section-heading center">
+                <div class="eyebrow">What We Fabricate</div>
+                <h2>Our Products & Equipment</h2>
+                <p>
+                    Customized stainless steel equipment designed for functionality,
+                    durability and the demands of professional kitchens.
+                </p>
+            </div>
+
+            <div class="product-grid">
+
+                <div class="product-card">
+                    <img src="assets/images/preparation-tables.jpg" alt="Stainless Steel Preparation Tables">
+                    <div class="product-info">
+                        <h3>Preparation Tables</h3>
+                        <p>Custom prep tables with shelves, sinks, drawers and additional work surfaces.</p>
+                        <a href="products.html" class="product-link">VIEW PRODUCTS →</a>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <img src="assets/images/stainless-sinks.jpg" alt="Stainless Steel Sinks">
+                    <div class="product-info">
+                        <h3>Stainless Steel Sinks</h3>
+                        <p>Single, double and triple compartment sinks, deep sinks and mop sinks.</p>
+                        <a href="products.html" class="product-link">VIEW PRODUCTS →</a>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <img src="assets/images/kitchen-cabinets.jpg" alt="Stainless Steel Cabinets">
+                    <div class="product-info">
+                        <h3>Kitchen Cabinets</h3>
+                        <p>Upright, under-counter, modular and customized stainless steel cabinets.</p>
+                        <a href="products.html" class="product-link">VIEW PRODUCTS →</a>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <img src="assets/images/shelves-racks.jpg" alt="Stainless Steel Shelves and Racks">
+                    <div class="product-info">
+                        <h3>Shelves & Racks</h3>
+                        <p>Wall-mounted shelves, multi-layer racks, slotted racks and cooling racks.</p>
+                        <a href="products.html" class="product-link">VIEW PRODUCTS →</a>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <img src="assets/images/exhaust-hood.jpg" alt="Commercial Kitchen Exhaust Hood">
+                    <div class="product-info">
+                        <h3>Exhaust Systems</h3>
+                        <p>Wall-mounted and island exhaust hoods with or without fresh air systems.</p>
+                        <a href="products.html" class="product-link">VIEW PRODUCTS →</a>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <img src="assets/images/kitchen-equipment.jpg" alt="Commercial Kitchen Equipment">
+                    <div class="product-info">
+                        <h3>Commercial Equipment</h3>
+                        <p>Bain-maries, mobile carts, cashier cabinets, grease traps and more.</p>
+                        <a href="products.html" class="product-link">VIEW PRODUCTS →</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- WHY CHOOSE US -->
+    <section class="section-padding why-us">
+        <div class="container">
+
+            <div class="section-heading center">
+                <div class="eyebrow">The CP Asia Advantage</div>
+                <h2>Why Choose CP ASIA ENTERPRISES?</h2>
+                <p>
+                    We combine quality materials, customized fabrication
+                    and dependable customer service.
+                </p>
+            </div>
+
+            <div class="features-grid">
+
+                <div class="feature">
+                    <div class="feature-icon">✦</div>
+                    <h3>Quality Materials</h3>
+                    <p>We use SS 304 food-grade stainless steel for durability and corrosion resistance.</p>
+                </div>
+
+                <div class="feature">
+                    <div class="feature-icon">⚙</div>
+                    <h3>Custom Fabrication</h3>
+                    <p>Equipment made according to your specific requirements and kitchen layout.</p>
+                </div>
+
+                <div class="feature">
+                    <div class="feature-icon">📐</div>
+                    <h3>Professional Planning</h3>
+                    <p>We conduct site visits, actual measurements and design planning.</p>
+                </div>
+
+                <div class="feature">
+                    <div class="feature-icon">✓</div>
+                    <h3>After-Sales Support</h3>
+                    <p>Reliable after-sales service and warranty support for our clients.</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section class="section-padding" id="projects">
+        <div class="container">
+
+            <div class="section-heading center">
+                <div class="eyebrow">Our Portfolio</div>
+                <h2>Our Featured Projects</h2>
+                <p>
+                    Showcasing our stainless steel fabrication projects
+                    for commercial and residential kitchens.
+                </p>
+            </div>
+
+            <div class="project-grid">
+
+                <div class="project-card">
+                    <img src="assets/images/project-aureo.jpg" alt="Aureo Hotel and Resort Project">
+                    <div class="project-overlay">
+                        <h3>Aureo Hotel & Resort</h3>
+                        <p>San Fernando, La Union</p>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <img src="assets/images/project-residential.jpg" alt="Residential Kitchen Project">
+                    <div class="project-overlay">
+                        <h3>Residential Kitchen</h3>
+                        <p>Custom Stainless Steel Fabrication</p>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <img src="assets/images/project-commercial.jpg" alt="Commercial Kitchen Project">
+                    <div class="project-overlay">
+                        <h3>Commercial Kitchen</h3>
+                        <p>Customized Kitchen Equipment</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <div style="text-align:center; margin-top:40px;">
+                <a href="projects.html" class="btn btn-primary">VIEW ALL PROJECTS →</a>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- CALL TO ACTION -->
+    <section class="cta">
+        <div class="container cta-content">
+
+            <div>
+                <div class="eyebrow">Let's Build Your Kitchen</div>
+                <h2>Have a Kitchen Project in Mind?</h2>
+                <p>Let's discuss your requirements and create a customized solution.</p>
+            </div>
+
+            <a href="contact.html" class="btn btn-primary">REQUEST A QUOTATION →</a>
+
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="container">
+
+            <div class="footer-grid">
+
+                <div class="footer-brand">
+                    <img src="assets/images/logo.png" alt="CP Asia Enterprises Logo">
+                    <h3>CP ASIA ENTERPRISES</h3>
+                    <p>
+                        Your trusted partner in customized stainless steel
+                        kitchen fabrication and commercial kitchen solutions.
+                    </p>
+                </div>
+
+                <div>
+                    <h4>QUICK LINKS</h4>
+                    <a href="index.html">Home</a>
+                    <a href="about.html">About Us</a>
+                    <a href="products.html">Products</a>
+                    <a href="services.html">Services</a>
+                    <a href="projects.html">Projects</a>
+                </div>
+
+                <div>
+                    <h4>OUR SERVICES</h4>
+                    <a href="services.html">Custom Fabrication</a>
+                    <a href="services.html">Kitchen Layout Planning</a>
+                    <a href="services.html">Site Measurement</a>
+                    <a href="services.html">Nationwide Delivery</a>
+                    <a href="services.html">After-Sales Support</a>
+                </div>
+
+                <div>
+                    <h4>CONTACT INFORMATION</h4>
+                    <p>☎ 0998-573-7151</p>
+                    <p>☎ 0939-915-6259</p>
+                    <p>☎ 0917-525-1421</p>
+                    <p>✉ ask.cpasiaenterprises@gmail.com</p>
+                    <p>Lot 199 Mayor's Drive, GMA, Cavite</p>
+                    <a href="https://www.facebook.com/stainlesskitchenfabricator" target="_blank" rel="noopener noreferrer">Facebook Page ↗</a>
+                </div>
+
+            </div>
+
+            <div class="copyright">
+                © 2026 CP ASIA ENTERPRISES. All Rights Reserved.
+                | Stainless Steel Kitchen Fabrication
+            </div>
+
+        </div>
+    </footer>
+
+    <!-- JAVASCRIPT -->
+    <script>
+        const menuToggle = document.getElementById('menuToggle');
+        const navLinks = document.getElementById('navLinks');
+
+        menuToggle.addEventListener('click', function() {
+            navLinks.classList.toggle('active');
+
+            const isOpen = navLinks.classList.contains('active');
+            menuToggle.setAttribute('aria-expanded', isOpen);
+            menuToggle.innerHTML = isOpen ? '&times;' : '☰';
+        });
+
+        document.querySelectorAll('.nav-links a').forEach(link => {
+            link.addEventListener('click', () => {
+                navLinks.classList.remove('active');
+                menuToggle.setAttribute('aria-expanded', 'false');
+                menuToggle.innerHTML = '☰';
+            });
+        });
+    </script>
+
+</body>
+</html>
