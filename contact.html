@@ -1,0 +1,951 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact CP ASIA ENTERPRISES for customized stainless steel kitchen equipment, fabrication, and kitchen solutions.">
+    <title>Contact Us | CP ASIA ENTERPRISES</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            --dark: #20252B;
+            --darker: #11161C;
+            --orange: #E77D28;
+            --silver: #B8BEC4;
+            --light: #F5F6F7;
+            --white: #FFFFFF;
+            --text: #555D65;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'DM Sans', sans-serif;
+            color: var(--text);
+            line-height: 1.7;
+            background: var(--white);
+        }
+
+        h1, h2, h3, h4 {
+            font-family: 'Montserrat', sans-serif;
+            color: var(--dark);
+            line-height: 1.25;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        /* TOP BAR */
+        .topbar {
+            background: var(--darker);
+            color: #ddd;
+            padding: 9px 5%;
+            font-size: 12px;
+            display: flex;
+            justify-content: space-between;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+
+        .topbar a:hover {
+            color: var(--orange);
+        }
+
+        /* NAVIGATION */
+        header {
+            background: var(--white);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 3px 15px rgba(0,0,0,.08);
+        }
+
+        .navbar {
+            min-height: 85px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .logo img {
+            width: 175px;
+            max-height: 65px;
+            object-fit: contain;
+        }
+
+        .nav-links {
+            display: flex;
+            align-items: center;
+            gap: 28px;
+            list-style: none;
+        }
+
+        .nav-links a {
+            font-size: 13px;
+            font-weight: 700;
+            color: var(--dark);
+            transition: .3s;
+        }
+
+        .nav-links a:hover,
+        .nav-links a.active {
+            color: var(--orange);
+        }
+
+        .nav-links .quote-btn {
+            background: var(--orange);
+            color: white;
+            padding: 12px 20px;
+            border-radius: 3px;
+        }
+
+        .nav-links .quote-btn:hover {
+            background: var(--dark);
+            color: white;
+        }
+
+        .menu-toggle {
+            display: none;
+            font-size: 28px;
+            border: none;
+            background: none;
+            color: var(--dark);
+            cursor: pointer;
+        }
+
+        /* PAGE HERO */
+        .page-hero {
+            min-height: 390px;
+            background:
+                linear-gradient(rgba(17,22,28,.83), rgba(17,22,28,.83)),
+                url('assets/images/contact-banner.jpg') center/cover no-repeat;
+            display: flex;
+            align-items: center;
+            text-align: center;
+            color: white;
+        }
+
+        .page-hero h1 {
+            font-size: clamp(34px, 5vw, 54px);
+            color: white;
+            margin-bottom: 15px;
+        }
+
+        .page-hero p {
+            max-width: 680px;
+            margin: auto;
+            color: #ddd;
+            font-size: 16px;
+        }
+
+        .breadcrumb {
+            margin-top: 20px;
+            font-size: 13px;
+            color: var(--silver);
+        }
+
+        .breadcrumb a {
+            color: var(--orange);
+        }
+
+        /* SECTION */
+        .section {
+            padding: 85px 0;
+        }
+
+        .section-heading {
+            text-align: center;
+            margin-bottom: 45px;
+        }
+
+        .section-heading span {
+            color: var(--orange);
+            font-size: 12px;
+            font-weight: 800;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        .section-heading h2 {
+            font-size: clamp(27px, 4vw, 36px);
+            margin: 12px 0;
+        }
+
+        .section-heading p {
+            max-width: 650px;
+            margin: auto;
+        }
+
+        /* CONTACT LAYOUT */
+        .contact-section {
+            background: var(--light);
+        }
+
+        .contact-grid {
+            display: grid;
+            grid-template-columns: .85fr 1.15fr;
+            gap: 35px;
+            align-items: start;
+        }
+
+        .contact-info {
+            background: var(--dark);
+            color: white;
+            padding: 38px;
+            border-radius: 6px;
+        }
+
+        .contact-info h2 {
+            color: white;
+            font-size: 25px;
+            margin-bottom: 12px;
+        }
+
+        .contact-info > p {
+            color: #c7cbd0;
+            margin-bottom: 30px;
+            font-size: 14px;
+        }
+
+        .contact-item {
+            display: flex;
+            gap: 16px;
+            margin-bottom: 25px;
+            align-items: flex-start;
+        }
+
+        .contact-icon {
+            width: 43px;
+            height: 43px;
+            flex-shrink: 0;
+            background: rgba(231,125,40,.15);
+            color: var(--orange);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 4px;
+            font-size: 20px;
+        }
+
+        .contact-item h3 {
+            color: white;
+            font-size: 14px;
+            margin-bottom: 5px;
+        }
+
+        .contact-item p,
+        .contact-item a {
+            color: #c7cbd0;
+            font-size: 13px;
+            overflow-wrap: anywhere;
+        }
+
+        .contact-item a:hover {
+            color: var(--orange);
+        }
+
+        .social-link {
+            display: inline-block;
+            margin-top: 10px;
+            background: var(--orange);
+            color: white !important;
+            padding: 10px 17px;
+            border-radius: 3px;
+            font-size: 12px !important;
+            font-weight: 700;
+        }
+
+        .social-link:hover {
+            background: white;
+            color: var(--dark) !important;
+        }
+
+        /* CONTACT FORM */
+        .contact-form {
+            background: white;
+            padding: 40px;
+            border-radius: 6px;
+            box-shadow: 0 5px 25px rgba(0,0,0,.05);
+        }
+
+        .contact-form h2 {
+            font-size: 25px;
+            margin-bottom: 10px;
+        }
+
+        .contact-form > p {
+            font-size: 14px;
+            margin-bottom: 25px;
+        }
+
+        .form-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 18px;
+        }
+
+        .form-group {
+            margin-bottom: 18px;
+        }
+
+        .form-group label {
+            display: block;
+            font-size: 13px;
+            font-weight: 700;
+            color: var(--dark);
+            margin-bottom: 7px;
+        }
+
+        .form-group input,
+        .form-group select,
+        .form-group textarea {
+            width: 100%;
+            padding: 13px 14px;
+            border: 1px solid #ddd;
+            border-radius: 3px;
+            font-family: inherit;
+            font-size: 13px;
+            outline: none;
+            transition: .3s;
+            background: white;
+        }
+
+        .form-group input:focus,
+        .form-group select:focus,
+        .form-group textarea:focus {
+            border-color: var(--orange);
+            box-shadow: 0 0 0 2px rgba(231,125,40,.1);
+        }
+
+        .form-group textarea {
+            min-height: 130px;
+            resize: vertical;
+        }
+
+        .submit-btn {
+            width: 100%;
+            padding: 15px;
+            border: none;
+            background: var(--orange);
+            color: white;
+            font-size: 13px;
+            font-weight: 800;
+            font-family: inherit;
+            border-radius: 3px;
+            cursor: pointer;
+            transition: .3s;
+        }
+
+        .submit-btn:hover {
+            background: var(--dark);
+        }
+
+        .form-note {
+            font-size: 11px;
+            margin-top: 12px;
+            color: #777;
+        }
+
+        /* BUSINESS LOCATIONS */
+        .locations-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 25px;
+        }
+
+        .location-card {
+            padding: 30px;
+            border: 1px solid #e5e5e5;
+            border-radius: 5px;
+            background: white;
+        }
+
+        .location-card .location-icon {
+            color: var(--orange);
+            font-size: 25px;
+            margin-bottom: 12px;
+        }
+
+        .location-card h3 {
+            font-size: 18px;
+            margin-bottom: 12px;
+        }
+
+        .location-card p {
+            font-size: 14px;
+        }
+
+        /* CTA */
+        .cta {
+            background: var(--orange);
+            padding: 55px 0;
+            text-align: center;
+            color: white;
+        }
+
+        .cta h2 {
+            color: white;
+            font-size: clamp(24px, 4vw, 32px);
+            margin-bottom: 12px;
+        }
+
+        .cta p {
+            margin-bottom: 25px;
+        }
+
+        .cta-btn {
+            display: inline-block;
+            background: var(--dark);
+            color: white;
+            padding: 13px 25px;
+            font-weight: 700;
+            font-size: 13px;
+            border-radius: 3px;
+            transition: .3s;
+        }
+
+        .cta-btn:hover {
+            background: white;
+            color: var(--dark);
+        }
+
+        /* FOOTER */
+        footer {
+            background: var(--darker);
+            color: #aaa;
+            padding: 55px 0 20px;
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: 1.4fr 1fr 1fr;
+            gap: 40px;
+            margin-bottom: 35px;
+        }
+
+        .footer-logo {
+            width: 175px;
+            max-height: 70px;
+            object-fit: contain;
+            margin-bottom: 15px;
+        }
+
+        footer h3 {
+            color: white;
+            font-size: 16px;
+            margin-bottom: 18px;
+        }
+
+        footer p,
+        footer a {
+            font-size: 13px;
+        }
+
+        footer ul {
+            list-style: none;
+        }
+
+        footer li {
+            margin-bottom: 9px;
+        }
+
+        footer a:hover {
+            color: var(--orange);
+        }
+
+        .copyright {
+            border-top: 1px solid #30363d;
+            padding-top: 20px;
+            text-align: center;
+            font-size: 12px;
+        }
+
+        /* RESPONSIVE */
+        @media(max-width: 900px) {
+            .nav-links {
+                gap: 15px;
+            }
+
+            .contact-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .footer-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+
+        @media(max-width: 768px) {
+            .topbar {
+                justify-content: center;
+                text-align: center;
+            }
+
+            .navbar {
+                min-height: 75px;
+            }
+
+            .logo img {
+                width: 145px;
+            }
+
+            .menu-toggle {
+                display: block;
+            }
+
+            .nav-links {
+                display: none;
+                position: absolute;
+                top: 75px;
+                left: 0;
+                width: 100%;
+                background: white;
+                flex-direction: column;
+                align-items: stretch;
+                gap: 0;
+                padding: 10px 5% 20px;
+                box-shadow: 0 8px 12px rgba(0,0,0,.08);
+            }
+
+            .nav-links.show {
+                display: flex;
+            }
+
+            .nav-links li a {
+                display: block;
+                padding: 12px 0;
+            }
+
+            .nav-links .quote-btn {
+                text-align: center;
+                margin-top: 8px;
+            }
+
+            .page-hero {
+                min-height: 320px;
+            }
+
+            .section {
+                padding: 60px 0;
+            }
+
+            .contact-info,
+            .contact-form {
+                padding: 28px 22px;
+            }
+        }
+
+        @media(max-width: 600px) {
+            .form-row,
+            .locations-grid,
+            .footer-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .page-hero {
+                min-height: 280px;
+            }
+
+            .page-hero p {
+                font-size: 14px;
+            }
+
+            .section {
+                padding: 50px 0;
+            }
+
+            .section-heading {
+                margin-bottom: 30px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- TOP BAR -->
+    <div class="topbar">
+        <div>📍 GMA, Cavite, Philippines</div>
+        <div>
+            <a href="tel:+639985737151">0998-573-7151</a>
+            &nbsp; | &nbsp;
+            <a href="mailto:ask.cpasiaenterprises@gmail.com">ask.cpasiaenterprises@gmail.com</a>
+        </div>
+    </div>
+
+    <!-- NAVIGATION -->
+    <header>
+        <div class="container navbar">
+
+            <a href="index.html" class="logo">
+                <img src="assets/images/logo.png" alt="CP ASIA ENTERPRISES Logo">
+            </a>
+
+            <button class="menu-toggle" id="menuToggle"
+                aria-label="Toggle navigation" aria-expanded="false"
+                aria-controls="navLinks">☰</button>
+
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="contact.html" class="quote-btn active">Get a Quote</a></li>
+            </ul>
+
+        </div>
+    </header>
+
+    <!-- PAGE HERO -->
+    <section class="page-hero">
+        <div class="container">
+            <h1>Contact Us</h1>
+            <p>
+                Let's build a kitchen that works for your business.
+                Get in touch with CP ASIA ENTERPRISES for customized
+                stainless steel kitchen equipment and fabrication.
+            </p>
+            <div class="breadcrumb">
+                <a href="index.html">Home</a> / Contact Us
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT DETAILS AND FORM -->
+    <section class="section contact-section">
+        <div class="container">
+
+            <div class="section-heading">
+                <span>Get In Touch</span>
+                <h2>We'd Love to Hear From You</h2>
+                <p>
+                    Have a project in mind? Contact our team for inquiries,
+                    product specifications, customized designs, and quotations.
+                </p>
+            </div>
+
+            <div class="contact-grid">
+
+                <!-- CONTACT INFORMATION -->
+                <div class="contact-info">
+                    <h2>Contact Information</h2>
+                    <p>
+                        Reach out to us through our contact details.
+                        We look forward to assisting you with your kitchen requirements.
+                    </p>
+
+                    <div class="contact-item">
+                        <div class="contact-icon">📍</div>
+                        <div>
+                            <h3>Manufacturing Shop</h3>
+                            <p>
+                                CP Asia Stainless Steel Fabrication<br>
+                                Lot 199 Mayor's Drive,<br>
+                                GMA, Cavite, Philippines
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon">🏢</div>
+                        <div>
+                            <h3>Office Address</h3>
+                            <p>
+                                Blk 26 Lot 38, Alta Tierra Homes,<br>
+                                GMA, Cavite, Philippines
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon">📞</div>
+                        <div>
+                            <h3>Phone Numbers</h3>
+                            <p>
+                                <a href="tel:+639985737151">Smart: 0998-573-7151</a><br>
+                                <a href="tel:+639399156259">Smart: 0939-915-6259</a><br>
+                                <a href="tel:+639175251421">Globe: 0917-525-1421</a>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon">✉</div>
+                        <div>
+                            <h3>Email Address</h3>
+                            <p>
+                                <a href="mailto:ask.cpasiaenterprises@gmail.com">
+                                    ask.cpasiaenterprises@gmail.com
+                                </a>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon">f</div>
+                        <div>
+                            <h3>Facebook Page</h3>
+                            <p>Follow our page for updates and project highlights.</p>
+                            <a class="social-link"
+                               href="https://www.facebook.com/stainlesskitchenfabricator"
+                               target="_blank" rel="noopener noreferrer">
+                                VISIT OUR FACEBOOK PAGE
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- INQUIRY FORM -->
+                <div class="contact-form">
+                    <h2>Send an Inquiry</h2>
+                    <p>
+                        Complete the form below to prepare your inquiry through email.
+                    </p>
+
+                    <form id="inquiryForm">
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="name">Full Name *</label>
+                                <input type="text" id="name" name="name"
+                                    placeholder="Enter your full name" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="phone">Contact Number *</label>
+                                <input type="tel" id="phone" name="phone"
+                                    placeholder="Enter your contact number" required>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="email">Email Address *</label>
+                                <input type="email" id="email" name="email"
+                                    placeholder="Enter your email" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="subject">Inquiry Type *</label>
+                                <select id="subject" name="subject" required>
+                                    <option value="">Select inquiry type</option>
+                                    <option>Product Inquiry</option>
+                                    <option>Custom Fabrication</option>
+                                    <option>Kitchen Design and Layout</option>
+                                    <option>Project Quotation</option>
+                                    <option>After-Sales Service</option>
+                                    <option>Other Inquiry</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="project">Project Location</label>
+                            <input type="text" id="project" name="project"
+                                placeholder="City / Province">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Message *</label>
+                            <textarea id="message" name="message"
+                                placeholder="Tell us about your requirements, preferred equipment, dimensions, or project details..."
+                                required></textarea>
+                        </div>
+
+                        <button type="submit" class="submit-btn">
+                            SEND INQUIRY VIA EMAIL →
+                        </button>
+
+                        <p class="form-note">
+                            * Required fields. Your email application will open
+                            with your inquiry details ready to send.
+                        </p>
+
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- BUSINESS LOCATIONS -->
+    <section class="section">
+        <div class="container">
+
+            <div class="section-heading">
+                <span>Find Us</span>
+                <h2>Our Business Locations</h2>
+                <p>
+                    Visit our office or manufacturing shop in General Mariano Alvarez, Cavite.
+                </p>
+            </div>
+
+            <div class="locations-grid">
+
+                <div class="location-card">
+                    <div class="location-icon">📍</div>
+                    <h3>Manufacturing Shop</h3>
+                    <p>
+                        CP Asia Stainless Steel Fabrication<br>
+                        Lot 199 Mayor's Drive, GMA, Cavite
+                    </p>
+                </div>
+
+                <div class="location-card">
+                    <div class="location-icon">🏢</div>
+                    <h3>Office</h3>
+                    <p>
+                        Blk 26 Lot 38, Alta Tierra Homes,<br>
+                        GMA, Cavite
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta">
+        <div class="container">
+            <h2>Planning Your Next Kitchen Project?</h2>
+            <p>
+                Let CP ASIA ENTERPRISES provide customized stainless steel
+                solutions for your kitchen needs.
+            </p>
+            <a href="products.html" class="cta-btn">EXPLORE OUR PRODUCTS</a>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="container">
+
+            <div class="footer-grid">
+
+                <div>
+                    <img src="assets/images/logo.png"
+                         alt="CP ASIA ENTERPRISES Logo"
+                         class="footer-logo">
+
+                    <p>
+                        Your trusted partner in customized stainless steel
+                        kitchen equipment and fabrication solutions since 2016.
+                    </p>
+                </div>
+
+                <div>
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3>Contact Details</h3>
+                    <p>GMA, Cavite, Philippines</p>
+                    <p>0998-573-7151</p>
+                    <p>0939-915-6259</p>
+                    <p>0917-525-1421</p>
+                    <p>ask.cpasiaenterprises@gmail.com</p>
+                </div>
+
+            </div>
+
+            <div class="copyright">
+                © <span id="year"></span> CP ASIA ENTERPRISES.
+                All Rights Reserved.
+            </div>
+
+        </div>
+    </footer>
+
+    <script>
+        // MOBILE NAVIGATION
+        const menuToggle = document.getElementById("menuToggle");
+        const navLinks = document.getElementById("navLinks");
+
+        menuToggle.addEventListener("click", function () {
+            const isOpen = navLinks.classList.toggle("show");
+            menuToggle.setAttribute("aria-expanded", isOpen);
+            menuToggle.textContent = isOpen ? "✕" : "☰";
+        });
+
+        // CLOSE MENU AFTER CLICKING A LINK
+        document.querySelectorAll(".nav-links a").forEach(link => {
+            link.addEventListener("click", function () {
+                navLinks.classList.remove("show");
+                menuToggle.setAttribute("aria-expanded", "false");
+                menuToggle.textContent = "☰";
+            });
+        });
+
+        // EMAIL INQUIRY FORM
+        document.getElementById("inquiryForm").addEventListener("submit", function (event) {
+            event.preventDefault();
+
+            if (!this.reportValidity()) return;
+
+            const name = document.getElementById("name").value.trim();
+            const phone = document.getElementById("phone").value.trim();
+            const email = document.getElementById("email").value.trim();
+            const subject = document.getElementById("subject").value;
+            const project = document.getElementById("project").value.trim();
+            const message = document.getElementById("message").value.trim();
+
+            const emailSubject = encodeURIComponent(
+                "Website Inquiry - " + subject
+            );
+
+            const emailBody = encodeURIComponent(
+                "CP ASIA ENTERPRISES - WEBSITE INQUIRY\n\n" +
+                "Full Name: " + name + "\n" +
+                "Contact Number: " + phone + "\n" +
+                "Email Address: " + email + "\n" +
+                "Inquiry Type: " + subject + "\n" +
+                "Project Location: " + (project || "Not provided") + "\n\n" +
+                "Message:\n" + message
+            );
+
+            const mailtoLink =
+                "mailto:ask.cpasiaenterprises@gmail.com" +
+                "?subject=" + emailSubject +
+                "&body=" + emailBody;
+
+            window.location.href = mailtoLink;
+        });
+
+        // AUTOMATIC COPYRIGHT YEAR
+        document.getElementById("year").textContent =
+            new Date().getFullYear();
+    </script>
+
+</body>
+</html>
