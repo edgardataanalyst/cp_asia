@@ -1193,8 +1193,10 @@ let activeImageIndex = 0;
 let activeProjectTitle = '';
 
 function getGalleryPaths(folder) {
-    const base = projectGalleryFolders[folder];
-    if (!base) return [];
+    return Array.from({ length: 10 }, (_, i) =>
+        `${folder}${i + 1}.jpg`
+    );
+}
 
     if (folder === 'aureo-hotel') {
         return [
