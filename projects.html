@@ -293,11 +293,9 @@ header {
 }
 
 .project-image {
-    cursor: zoom-in;
     position: relative;
     height: 245px;
     overflow: hidden;
-    cursor: pointer;
     background: #ddd;
 }
 
@@ -434,65 +432,7 @@ header {
     background: var(--dark);
 }
 
-/* IMAGE MODAL */
 
-.modal {
-    display: none;
-    position: fixed;
-    z-index: 2000;
-    inset: 0;
-    background: rgba(0,0,0,.92);
-    align-items: center;
-    justify-content: center;
-    padding: 30px;
-}
-
-.modal.active {
-    display: flex;
-}
-
-.modal-content {
-    max-width: 950px;
-    width: 100%;
-    text-align: center;
-}
-
-.modal-content img {
-    max-height: 75vh;
-    width: auto;
-    max-width: 100%;
-    margin: auto;
-    object-fit: contain;
-}
-
-.modal-nav {
-    position: absolute; top: 50%; transform: translateY(-50%);
-    width: 46px; height: 46px; border: 0; border-radius: 50%;
-    background: rgba(255,255,255,.16); color: white; font-size: 22px;
-    cursor: pointer; transition: .2s;
-}
-.modal-nav:hover { background: var(--orange); }
-.modal-prev { left: 25px; }
-.modal-next { right: 25px; }
-.modal-counter { color: #bbb; font-size: 12px; margin-top: 12px; }
-
-.modal-caption {
-    color: white;
-    margin-top: 15px;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 15px;
-}
-
-.modal-close {
-    position: absolute;
-    top: 20px;
-    right: 30px;
-    color: white;
-    font-size: 40px;
-    background: none;
-    border: none;
-    cursor: pointer;
-}
 
 /* FOOTER */
 
@@ -824,7 +764,7 @@ footer {
             <!-- HOTEL AND RESORT -->
 
             <div class="project-card" data-category="hotel">
-                <div class="project-image" data-gallery-folder="aureo-hotel" data-gallery="aureo">
+                <div class="project-image">
                     <img src="images/cp_asia_project_aureo.jpg"
                          alt="Aureo Hotel and Resort Kitchen">
                     <span class="project-category">Hotel & Resort</span>
@@ -838,100 +778,61 @@ footer {
             </div>
 
             <div class="project-card" data-category="hotel">
-                <div class="project-image" data-gallery-folder="blu-water-resort">
+                <div class="project-image">
                     <img src="assets/images/project-bluwater.jpg"
                          alt="Blu Water Resort Kitchen">
                     <span class="project-category">Hotel & Resort</span>
                 </div>
                 <div class="project-info">
-                    <h3>Blu Water Resort</h3>
-                    <div class="project-location">Baung, La Union</div>
+                    <h3>Burg and Go Restaurant</h3>
+                    <div class="project-location">Ilocos Norte</div>
                     <p>Customized stainless steel kitchen equipment project for a resort.</p>
                 </div>
             </div>
 
-            <div class="project-card" data-category="hotel">
-                <div class="project-image" data-gallery-folder="chateau-genivie">
-                    <img src="assets/images/project-chateau.jpg"
-                         alt="Chateau Genivie Hotel and Resort">
-                    <span class="project-category">Hotel & Resort</span>
-                </div>
-                <div class="project-info">
-                    <h3>Chateau Genivie Hotel & Resort</h3>
-                    <div class="project-location">Calamba, Laguna</div>
-                    <p>Kitchen fabrication project for a hotel and resort establishment.</p>
-                </div>
-            </div>
 
             <!-- RESIDENTIAL -->
 
             <div class="project-card" data-category="residential">
-                <div class="project-image" data-gallery-folder="mimis-kitchen">
-                    <img src="assets/images/project-mimi.jpg"
+                <div class="project-image">
+                    <img src="images/cp_asia_project_claudine.jpg"
                          alt="Mimi's Kitchen">
                     <span class="project-category">Residential</span>
                 </div>
                 <div class="project-info">
-                    <h3>Mimi's Kitchen</h3>
-                    <div class="project-location">Parañaque City</div>
+                    <h3>Claudine Sy Kitchen</h3>
                     <p>Customized stainless steel residential kitchen project.</p>
                 </div>
             </div>
 
             <div class="project-card" data-category="residential">
-                <div class="project-image" data-gallery-folder="senator-raffy-tulfo-kitchen">
-                    <img src="assets/images/project-raffy.jpg"
-                         alt="Senator Raffy Tulfo Kitchen">
-                    <span class="project-category">Residential</span>
-                </div>
-                <div class="project-info">
-                    <h3>Senator Raffy Tulfo's Kitchen</h3>
-                    <div class="project-location">Residential Kitchen</div>
-                    <p>Customized stainless steel kitchen project documented in the company portfolio.</p>
-                </div>
-            </div>
-
-            <div class="project-card" data-category="residential">
-                <div class="project-image" data-gallery-folder="joans-kitchen">
-                    <img src="assets/images/project-joan.jpg"
+                <div class="project-image">
+                    <img src="images/cp_asia_project_maries.jpg"
                          alt="Joan's Kitchen">
                     <span class="project-category">Residential</span>
                 </div>
                 <div class="project-info">
-                    <h3>Joan's Kitchen</h3>
+                    <h3>Marie's Kitchen</h3>
                     <div class="project-location">Residential Kitchen</div>
                     <p>Customized stainless steel kitchen fabrication.</p>
                 </div>
             </div>
 
             <div class="project-card" data-category="residential">
-                <div class="project-image" data-gallery-folder="bernard-pineda-kitchen">
-                    <img src="assets/images/project-bernard.jpg"
-                         alt="Mr. Bernard Pineda Kitchen">
-                    <span class="project-category">Residential</span>
-                </div>
-                <div class="project-info">
-                    <h3>Mr. Bernard Pineda Kitchen</h3>
-                    <div class="project-location">Silang, Cavite</div>
-                    <p>Customized residential kitchen fabrication project.</p>
-                </div>
-            </div>
-
-            <div class="project-card" data-category="residential">
-                <div class="project-image" data-gallery-folder="mayas-kitchen">
-                    <img src="assets/images/project-mayas.jpg"
+                <div class="project-image">
+                    <img src="images/cp_asia_project_benguet.jpg"
                          alt="Mayas Kitchen">
                     <span class="project-category">Residential</span>
                 </div>
                 <div class="project-info">
-                    <h3>Mayas Kitchen</h3>
-                    <div class="project-location">BF Homes, Las Piñas</div>
+                    <h3>Mr George Kitchen</h3>
+                    <div class="project-location">Benguet</div>
                     <p>Customized stainless steel kitchen installation project.</p>
                 </div>
             </div>
 
             <div class="project-card" data-category="residential">
-                <div class="project-image" data-gallery-folder="ms-nelle-kitchen">
+                <div class="project-image">
                     <img src="images/cp_asia_project_dasma.jpg"
                          alt="Ms. Nelle Kitchen">
                     <span class="project-category">Residential</span>
@@ -946,7 +847,7 @@ footer {
             <!-- COMMERCIAL -->
 
             <div class="project-card" data-category="commercial">
-                <div class="project-image" data-gallery-folder="gong-cha-tea">
+                <div class="project-image">
                     <img src="images/cp_asia_project_gongcha1.jpg"
                          alt="I Love Milk Tea Kitchen">
                     <span class="project-category">Commercial</span>
@@ -958,23 +859,11 @@ footer {
                 </div>
             </div>
 
-            <div class="project-card" data-category="commercial">
-                <div class="project-image" data-gallery-folder="littlefuse-philippines">
-                    <img src="assets/images/project-littlefuse.jpg"
-                         alt="Littlefuse Philippines">
-                    <span class="project-category">Commercial</span>
-                </div>
-                <div class="project-info">
-                    <h3>Littlefuse Philippines</h3>
-                    <div class="project-location">Ongoing Installation</div>
-                    <p>Stainless steel kitchen fabrication project documented as an ongoing installation in the company profile.</p>
-                </div>
-            </div>
 
             <!-- SPECIAL PROJECTS -->
 
             <div class="project-card" data-category="special">
-                <div class="project-image" data-gallery-folder="pnr-sinks">
+                <div class="project-image">
                     <img src="assets/images/project-pnr.jpg"
                          alt="PNR 32 Units Sinks">
                     <span class="project-category">Special Project</span>
@@ -1043,20 +932,6 @@ footer {
 
     </div>
 </section>
-
-<!-- IMAGE MODAL -->
-<div class="modal" id="imageModal" aria-hidden="true">
-    <button class="modal-close" id="modalClose"
-            aria-label="Close image">&times;</button>
-
-    <button class="modal-nav modal-prev" id="modalPrev" aria-label="Previous image">&#10094;</button>
-    <div class="modal-content">
-        <img src="" id="modalImage" alt="Project Preview">
-        <div class="modal-counter" id="modalCounter"></div>
-        <div class="modal-caption" id="modalCaption"></div>
-    </div>
-    <button class="modal-nav modal-next" id="modalNext" aria-label="Next image">&#10095;</button>
-</div>
 
 <!-- FOOTER -->
 <footer>
@@ -1164,124 +1039,6 @@ filterButtons.forEach(button => {
 
 });
 
-/* PROJECT IMAGE GALLERY MODAL - 10 PHOTOS PER PROJECT */
-const modal = document.getElementById('imageModal');
-const modalImage = document.getElementById('modalImage');
-const modalCaption = document.getElementById('modalCaption');
-const modalCounter = document.getElementById('modalCounter');
-const modalClose = document.getElementById('modalClose');
-const modalPrev = document.getElementById('modalPrev');
-const modalNext = document.getElementById('modalNext');
-
-const projectGalleryFolders = {
-    'aureo-hotel': 'assets/images/aureo-hotel-photos',
-    'blu-water-resort': 'assets/images/projects/blu-water-resort',
-    'chateau-genivie': 'assets/images/projects/chateau-genivie',
-    'mimis-kitchen': 'assets/images/projects/mimis-kitchen',
-    'senator-raffy-tulfo-kitchen': 'assets/images/projects/senator-raffy-tulfo-kitchen',
-    'joans-kitchen': 'assets/images/projects/joans-kitchen',
-    'bernard-pineda-kitchen': 'assets/images/projects/bernard-pineda-kitchen',
-    'mayas-kitchen': 'assets/images/projects/mayas-kitchen',
-    'ms-nelle-kitchen': 'assets/images/projects/ms-nelle-kitchen',
-    'gong-cha-tea': 'images/cp_asia_project_gongcha1',
-    'littlefuse-philippines': 'assets/images/projects/littlefuse-philippines',
-    'pnr-sinks': 'assets/images/projects/pnr-sinks'
-};
-
-let activeGallery = [];
-let activeImageIndex = 0;
-let activeProjectTitle = '';
-
-function getGalleryPaths(folder) {
-    return Array.from({ length: 10 }, (_, i) =>
-        `${folder}${i + 1}.jpg`
-    );
-}
-
-    if (folder === 'aureo-hotel') {
-        return [
-            `${base}/aureo-hotel-01-preparation-table.jpg`,
-            `${base}/aureo-hotel-02-stainless-workstation.jpg`,
-            `${base}/aureo-hotel-03-commercial-kitchen.jpg`,
-            `${base}/aureo-hotel-04-stainless-prep-area.jpg`,
-            `${base}/aureo-hotel-05-double-sink.jpg`,
-            `${base}/aureo-hotel-06.jpg`,
-            `${base}/aureo-hotel-07.jpg`,
-            `${base}/aureo-hotel-08.jpg`,
-            `${base}/aureo-hotel-09.jpg`,
-            `${base}/aureo-hotel-10.jpg`
-        ];
-    }
-
-    return Array.from({length: 10}, (_, i) =>
-        `${base}/photo-${String(i + 1).padStart(2, '0')}.jpg`
-    );
-}
-
-function showGalleryImage() {
-    if (!activeGallery.length) return;
-    modalImage.src = activeGallery[activeImageIndex];
-    modalImage.alt = `${activeProjectTitle} - Photo ${activeImageIndex + 1}`;
-    modalCaption.textContent = activeProjectTitle;
-    modalCounter.textContent = `${activeImageIndex + 1} / ${activeGallery.length}`;
-    const multiple = activeGallery.length > 1;
-    modalPrev.style.display = multiple ? 'block' : 'none';
-    modalNext.style.display = multiple ? 'block' : 'none';
-}
-
-function openProjectGallery(imageBox) {
-    const card = imageBox.closest('.project-card');
-    activeProjectTitle = card.querySelector('h3').textContent;
-    activeGallery = getGalleryPaths(imageBox.dataset.galleryFolder);
-    activeImageIndex = 0;
-    showGalleryImage();
-    modal.classList.add('active');
-    modal.setAttribute('aria-hidden', 'false');
-    document.body.style.overflow = 'hidden';
-}
-
-document.querySelectorAll('.project-image').forEach(imageBox => {
-    imageBox.setAttribute('role', 'button');
-    imageBox.setAttribute('tabindex', '0');
-    imageBox.setAttribute('aria-label', 'Open project photo gallery');
-    imageBox.addEventListener('click', () => openProjectGallery(imageBox));
-    imageBox.addEventListener('keydown', event => {
-        if (event.key === 'Enter' || event.key === ' ') {
-            event.preventDefault();
-            openProjectGallery(imageBox);
-        }
-    });
-});
-
-function showPreviousImage() {
-    if (activeGallery.length < 2) return;
-    activeImageIndex = (activeImageIndex - 1 + activeGallery.length) % activeGallery.length;
-    showGalleryImage();
-}
-function showNextImage() {
-    if (activeGallery.length < 2) return;
-    activeImageIndex = (activeImageIndex + 1) % activeGallery.length;
-    showGalleryImage();
-}
-function closeModal() {
-    modal.classList.remove('active');
-    modal.setAttribute('aria-hidden', 'true');
-    modalImage.src = '';
-    activeGallery = [];
-    document.body.style.overflow = '';
-}
-modalPrev.addEventListener('click', showPreviousImage);
-modalNext.addEventListener('click', showNextImage);
-modalClose.addEventListener('click', closeModal);
-modal.addEventListener('click', event => {
-    if (event.target === modal) closeModal();
-});
-document.addEventListener('keydown', event => {
-    if (!modal.classList.contains('active')) return;
-    if (event.key === 'Escape') closeModal();
-    if (event.key === 'ArrowLeft') showPreviousImage();
-    if (event.key === 'ArrowRight') showNextImage();
-});
 
 </script>
 
