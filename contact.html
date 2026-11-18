@@ -887,65 +887,83 @@
         </div>
     </footer>
 
-    <script>
+    
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+
+        // =====================================
         // MOBILE NAVIGATION
+        // =====================================
+
         const menuToggle = document.getElementById("menuToggle");
         const navLinks = document.getElementById("navLinks");
 
-        menuToggle.addEventListener("click", function () {
-            const isOpen = navLinks.classList.toggle("show");
-            menuToggle.setAttribute("aria-expanded", isOpen);
-            menuToggle.textContent = isOpen ? "✕" : "☰";
-        });
+        if (menuToggle && navLinks) {
 
-        // CLOSE MENU AFTER CLICKING A LINK
-        document.querySelectorAll(".nav-links a").forEach(link => {
-            link.addEventListener("click", function () {
-                navLinks.classList.remove("show");
-                menuToggle.setAttribute("aria-expanded", "false");
-                menuToggle.textContent = "☰";
+            menuToggle.addEventListener("click", function () {
+
+                const isOpen = navLinks.classList.toggle("show");
+
+                menuToggle.setAttribute("aria-expanded", isOpen);
+                menuToggle.textContent = isOpen ? "✕" : "☰";
+
             });
-        });
 
-        // EMAIL INQUIRY FORM
-        document.getElementById("inquiryForm").addEventListener("submit", function (event) {
-            event.preventDefault();
+            // CLOSE MENU AFTER CLICKING A LINK
+            document.querySelectorAll(".nav-links a").forEach(function (link) {
 
-            if (!this.reportValidity()) return;
+                link.addEventListener("click", function () {
 
-            const name = document.getElementById("name").value.trim();
-            const phone = document.getElementById("phone").value.trim();
-            const email = document.getElementById("email").value.trim();
-            const subject = document.getElementById("subject").value;
-            const project = document.getElementById("project").value.trim();
-            const message = document.getElementById("message").value.trim();
+                    navLinks.classList.remove("show");
+                    menuToggle.setAttribute("aria-expanded", "false");
+                    menuToggle.textContent = "☰";
 
-            const emailSubject = encodeURIComponent(
-                "Website Inquiry - " + subject
-            );
+                });
 
-            const emailBody = encodeURIComponent(
-                "CP ASIA ENTERPRISES - WEBSITE INQUIRY\n\n" +
-                "Full Name: " + name + "\n" +
-                "Contact Number: " + phone + "\n" +
-                "Email Address: " + email + "\n" +
-                "Inquiry Type: " + subject + "\n" +
-                "Project Location: " + (project || "Not provided") + "\n\n" +
-                "Message:\n" + message
-            );
+            });
 
-            const mailtoLink =
-                "mailto:ask.cpasiaenterprises@gmail.com" +
-                "?subject=" + emailSubject +
-                "&body=" + emailBody;
+        }
 
-            window.location.href = mailtoLink;
-        });
 
+        // =====================================
+        // EMAIL INQUIRY FORM - FORMSUBMIT
+        // =====================================
+
+        const inquiryForm = document.getElementById("inquiryForm");
+
+        if (inquiryForm) {
+
+            inquiryForm.addEventListener("submit", function () {
+
+                const submitButton = inquiryForm.querySelector(
+                    'button[type="submit"]'
+                );
+
+                if (submitButton) {
+                    submitButton.disabled = true;
+                    submitButton.textContent = "SENDING INQUIRY...";
+                }
+
+                // FormSubmit will process and send the inquiry.
+                // Do not use preventDefault() or mailto.
+            });
+
+        }
+
+
+        // =====================================
         // AUTOMATIC COPYRIGHT YEAR
-        document.getElementById("year").textContent =
-            new Date().getFullYear();
-    </script>
+        // =====================================
+
+        const yearElement = document.getElementById("year");
+
+        if (yearElement) {
+            yearElement.textContent = new Date().getFullYear();
+        }
+
+    });
+</script>
+
 
 </body>
 </html>
