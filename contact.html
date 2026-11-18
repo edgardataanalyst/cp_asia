@@ -718,74 +718,90 @@
                     </div>
                 </div>
 
-                <!-- INQUIRY FORM -->
-                <div class="contact-form">
-                    <h2>Send an Inquiry</h2>
-                    <p>
-                        Complete the form below to prepare your inquiry through email.
-                    </p>
+              
+<div class="contact-form">
+    <h2>Send an Inquiry</h2>
+    <p>Complete the form below to send your inquiry to CP ASIA ENTERPRISES.</p>
 
-                    <form id="inquiryForm">
+    <form id="inquiryForm"
+          action="https://formsubmit.co/ask.cpasiaenterprises@gmail.com"
+          method="POST">
 
-                        <div class="form-row">
-                            <div class="form-group">
-                                <label for="name">Full Name *</label>
-                                <input type="text" id="name" name="name"
-                                    placeholder="Enter your full name" required>
-                            </div>
+        <!-- FORMSUBMIT SETTINGS -->
+        <input type="hidden" name="_subject"
+               value="New Quotation Request - CP ASIA ENTERPRISES">
 
-                            <div class="form-group">
-                                <label for="phone">Contact Number *</label>
-                                <input type="tel" id="phone" name="phone"
-                                    placeholder="Enter your contact number" required>
-                            </div>
-                        </div>
+        <input type="hidden" name="_template" value="table">
 
-                        <div class="form-row">
-                            <div class="form-group">
-                                <label for="email">Email Address *</label>
-                                <input type="email" id="email" name="email"
-                                    placeholder="Enter your email" required>
-                            </div>
+        <input type="hidden" name="_captcha" value="true">
 
-                            <div class="form-group">
-                                <label for="subject">Inquiry Type *</label>
-                                <select id="subject" name="subject" required>
-                                    <option value="">Select inquiry type</option>
-                                    <option>Product Inquiry</option>
-                                    <option>Custom Fabrication</option>
-                                    <option>Kitchen Design and Layout</option>
-                                    <option>Project Quotation</option>
-                                    <option>After-Sales Service</option>
-                                    <option>Other Inquiry</option>
-                                </select>
-                            </div>
-                        </div>
+        <input type="hidden" name="_next"
+               value="https://cpasia.net/contact.html?submitted=true">
 
-                        <div class="form-group">
-                            <label for="project">Project Location</label>
-                            <input type="text" id="project" name="project"
-                                placeholder="City / Province">
-                        </div>
+        <!-- FULL NAME AND PHONE -->
+        <div class="form-row">
+            <div class="form-group">
+                <label for="name">Full Name *</label>
+                <input type="text" id="name" name="name"
+                       placeholder="Enter your full name" required>
+            </div>
 
-                        <div class="form-group">
-                            <label for="message">Message *</label>
-                            <textarea id="message" name="message"
-                                placeholder="Tell us about your requirements, preferred equipment, dimensions, or project details..."
-                                required></textarea>
-                        </div>
+            <div class="form-group">
+                <label for="phone">Contact Number *</label>
+                <input type="tel" id="phone" name="phone"
+                       placeholder="Enter your contact number" required>
+            </div>
+        </div>
 
-                        <button type="submit" class="submit-btn">
-                            SEND INQUIRY VIA EMAIL →
-                        </button>
+        <!-- EMAIL AND INQUIRY TYPE -->
+        <div class="form-row">
+            <div class="form-group">
+                <label for="email">Email Address *</label>
+                <input type="email" id="email" name="email"
+                       placeholder="Enter your email" required>
+            </div>
 
-                        <p class="form-note">
-                            * Required fields. Your email application will open
-                            with your inquiry details ready to send.
-                        </p>
+            <div class="form-group">
+                <label for="subject">Inquiry Type *</label>
+                <select id="subject" name="subject" required>
+                    <option value="">Select inquiry type</option>
+                    <option value="Product Inquiry">Product Inquiry</option>
+                    <option value="Custom Fabrication">Custom Fabrication</option>
+                    <option value="Kitchen Design and Layout">Kitchen Design and Layout</option>
+                    <option value="Project Quotation">Project Quotation</option>
+                    <option value="After-Sales Service">After-Sales Service</option>
+                    <option value="Other Inquiry">Other Inquiry</option>
+                </select>
+            </div>
+        </div>
 
-                    </form>
-                </div>
+        <!-- PROJECT LOCATION -->
+        <div class="form-group">
+            <label for="project">Project Location</label>
+            <input type="text" id="project" name="project"
+                   placeholder="City / Province">
+        </div>
+
+        <!-- MESSAGE -->
+        <div class="form-group">
+            <label for="message">Message *</label>
+            <textarea id="message" name="message"
+                      placeholder="Tell us about your requirements, preferred equipment, dimensions, or project details..."
+                      required></textarea>
+        </div>
+
+        <!-- SUBMIT BUTTON -->
+        <button type="submit" class="submit-btn">
+            SEND INQUIRY →
+        </button>
+
+        <p class="form-note">
+            * Required fields. Your inquiry will be submitted directly to CP ASIA ENTERPRISES.
+        </p>
+
+    </form>
+</div>
+
 
             </div>
         </div>
@@ -887,83 +903,116 @@
         </div>
     </footer>
 
-    
+
 <script>
-    document.addEventListener("DOMContentLoaded", function () {
+document.addEventListener("DOMContentLoaded", function () {
 
-        // =====================================
-        // MOBILE NAVIGATION
-        // =====================================
+    // =====================================
+    // MOBILE NAVIGATION
+    // =====================================
 
-        const menuToggle = document.getElementById("menuToggle");
-        const navLinks = document.getElementById("navLinks");
+    const menuToggle = document.getElementById("menuToggle");
+    const navLinks = document.getElementById("navLinks");
 
-        if (menuToggle && navLinks) {
+    if (menuToggle && navLinks) {
 
-            menuToggle.addEventListener("click", function () {
+        menuToggle.addEventListener("click", function () {
 
-                const isOpen = navLinks.classList.toggle("show");
+            const isOpen = navLinks.classList.toggle("show");
 
-                menuToggle.setAttribute("aria-expanded", isOpen);
-                menuToggle.textContent = isOpen ? "✕" : "☰";
+            menuToggle.setAttribute("aria-expanded", isOpen);
+            menuToggle.textContent = isOpen ? "✕" : "☰";
+
+        });
+
+        // CLOSE MENU AFTER CLICKING A LINK
+        document.querySelectorAll(".nav-links a").forEach(function (link) {
+
+            link.addEventListener("click", function () {
+
+                navLinks.classList.remove("show");
+
+                menuToggle.setAttribute("aria-expanded", "false");
+                menuToggle.textContent = "☰";
 
             });
 
-            // CLOSE MENU AFTER CLICKING A LINK
-            document.querySelectorAll(".nav-links a").forEach(function (link) {
+        });
 
-                link.addEventListener("click", function () {
-
-                    navLinks.classList.remove("show");
-                    menuToggle.setAttribute("aria-expanded", "false");
-                    menuToggle.textContent = "☰";
-
-                });
-
-            });
-
-        }
+    }
 
 
-        // =====================================
-        // EMAIL INQUIRY FORM - FORMSUBMIT
-        // =====================================
+    // =====================================
+    // EMAIL INQUIRY FORM - FORMSUBMIT
+    // =====================================
 
-        const inquiryForm = document.getElementById("inquiryForm");
+    const inquiryForm = document.getElementById("inquiryForm");
 
-        if (inquiryForm) {
+    if (inquiryForm) {
 
-            inquiryForm.addEventListener("submit", function () {
+        inquiryForm.addEventListener("submit", function (event) {
 
-                const submitButton = inquiryForm.querySelector(
-                    'button[type="submit"]'
-                );
+            if (!inquiryForm.reportValidity()) {
+                event.preventDefault();
+                return;
+            }
 
-                if (submitButton) {
-                    submitButton.disabled = true;
-                    submitButton.textContent = "SENDING INQUIRY...";
-                }
+            const submitButton = inquiryForm.querySelector(
+                'button[type="submit"]'
+            );
 
-                // FormSubmit will process and send the inquiry.
-                // Do not use preventDefault() or mailto.
-            });
+            if (submitButton) {
 
-        }
+                submitButton.disabled = true;
+                submitButton.textContent = "SENDING INQUIRY...";
+
+            }
+
+            // Allow normal form submission to FormSubmit.
+            // Do not use preventDefault() here.
+
+        });
+
+    }
 
 
-        // =====================================
-        // AUTOMATIC COPYRIGHT YEAR
-        // =====================================
+    // =====================================
+    // SUCCESS NOTIFICATION
+    // =====================================
 
-        const yearElement = document.getElementById("year");
+    const params = new URLSearchParams(window.location.search);
 
-        if (yearElement) {
-            yearElement.textContent = new Date().getFullYear();
-        }
+    if (params.get("submitted") === "true") {
 
-    });
+        alert(
+            "✓ EMAIL SENT SUCCESSFULLY!\n\n" +
+            "Thank you for contacting CP ASIA ENTERPRISES.\n\n" +
+            "Your inquiry has been submitted. Our team will get in touch with you."
+        );
+
+        // Remove query parameter after notification
+        window.history.replaceState(
+            {},
+            document.title,
+            window.location.pathname
+        );
+
+    }
+
+
+    // =====================================
+    // AUTOMATIC COPYRIGHT YEAR
+    // =====================================
+
+    const yearElement = document.getElementById("year");
+
+    if (yearElement) {
+
+        yearElement.textContent = new Date().getFullYear();
+
+    }
+
+});
 </script>
-
-
 </body>
 </html>
